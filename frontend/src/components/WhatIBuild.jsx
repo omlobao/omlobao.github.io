@@ -16,10 +16,12 @@ import {
   Check,
   Info,
   Key,
-  UserCheck
+  UserCheck,
+  Boxes,
+  Sparkles
 } from 'lucide-react';
 
-const pillarIcons = [Smartphone, Split, Monitor, ShieldCheck, Calculator];
+const pillarIcons = [Smartphone, Split, Monitor, ShieldCheck, Calculator, Boxes, Sparkles];
 
 export default function WhatIBuild() {
   const { t } = useLanguage();

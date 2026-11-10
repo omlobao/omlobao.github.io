@@ -11,13 +11,13 @@ export const translations = {
       top: 'Topo'
     },
     profile: {
-      role: 'Desenvolvedor Full Stack & Back-End Python • Pós-graduando em Engenharia de Software Full Stack',
+      role: 'Analista de Sistemas • Desenvolvedor Full Stack e Back-End Python • Pós-graduando em Engenharia de Software Full Stack',
       locationLabel: 'Onde vivo',
       locationVal: 'Taguatinga-DF, Brasil',
       timeLabel: 'Hora Local',
       focusLabel: 'Foco Técnico',
       focusVal: 'Python • PostgreSQL • Django',
-      bio: 'Desenvolvedor Full Stack & Back-End Python com conhecimentos em bancos de dados relacionais, APIs RESTful e infraestrutura, graduado em Análise e Desenvolvimento de Sistemas e Pós-graduando em Engenharia de Software Full Stack.',
+      bio: 'Desenvolvedor Full Stack e Back-End Python com conhecimentos em bancos de dados relacionais, APIs RESTful e infraestrutura, graduado em Análise e Desenvolvimento de Sistemas e Pós-graduando em Engenharia de Software Full Stack.',
       quote: 'Meu passatempo é analisar problemas e pensar em soluções técnicas para resolvê-los.',
       quoteOrigin: '— visão que deu origem ao Krosmox SGR.',
       copyEmail: 'Copiar e-mail',
@@ -32,7 +32,7 @@ export const translations = {
       architecture: 'Arquitetura Multi-Tenant',
       status: '● Sistema em Produção',
       title: 'Krosmox SGR',
-      tagline: 'ERP Multi-Sistema de Gestão Gastronômica e Engenharia Operacional',
+      tagline: 'ERP de Gestão Gastronômica e Engenharia Operacional',
       headline: 'Toda a sua operação em um único lugar, desde o estoque até a entrega do pedido.',
       subheadline: 'Mais do que um aplicativo isolado, o SGR é um ERP multi-sistema completo com acesso web via navegador e integração ao app de salão em Flutter (em desenvolvimento). Seu propósito central é descomplicar a vida dos garçons através de uma interface limpa, fluida e ergonômica, com foco absoluto em agilidade e eficiência — permitindo ainda que bar e cozinha faturem de forma 100% independente no mesmo salão.',
       demoUrl: 'https://sgr-demo.vercel.app/login',
@@ -43,10 +43,10 @@ export const translations = {
       demoPassLabel: 'Senha demo',
       demoAlert: 'Nota: O back-end desta versão de demonstração está hospedado na camada gratuita do Render. Caso esteja em repouso, a primeira requisição pode levar cerca de 1 minuto para acordar o servidor.',
       stats: [
-        { value: '-15 min', label: 'Giro de Mesa', desc: 'Chega de garçom indo até a cozinha entregar comanda.' },
-        { value: '4% a 7%', label: 'Economia Fiscal', desc: 'Segregação de monofásicos no Simples' },
-        { value: 'Multi-CNPJ', label: 'Split de Pagamento', desc: 'Bar e cozinha faturam de forma independente em uma única transação.' },
-        { value: '< 10 min', label: 'Treinamento', desc: 'Curva de aprendizado simples e descomplicada.' }
+        { value: 'Praticidade', label: 'O Garçom não é o papa-léguas', desc: 'Chega de garçom indo até a cozinha entregar comanda.' },
+        { value: 'Fiscal', label: 'Impostos e Tributos', desc: 'Compatibilidade com todos os regimes tributários.' },
+        { value: 'Independência', label: 'Split de Pagamento', desc: 'Bar e cozinha faturam de forma independente em uma única transação.' },
+        { value: 'Treinamento', label: 'Descomplicado', desc: 'Curva de aprendizado simples e descomplicada.' }
       ],
       pillarsTitle: 'Pilares de Engenharia Operacional',
       pillarsSubtitle: 'Clique para expandir cada pilar',
@@ -55,7 +55,7 @@ export const translations = {
           number: '01',
           title: 'App do Garçom (Flutter • Em desenvolvimento)',
           subtitle: 'Interface limpa, fluida e focada em agilidade',
-          description: 'Conectado diretamente ao núcleo do ERP web via API e WebSockets. Descomplica a rotina de salão com interface rápida a 60fps, alerta tátil de pedidos prontos no bolso, seletor de fatias para pizzas (4, 6, 8 e 12 fatias com cálculo automático), comandas individuais por pessoa e modo tela sempre acesa (Wake Lock).',
+          description: 'Conectado diretamente ao núcleo do ERP web via API e WebSockets. Descomplica a rotina de salão com interface rápida, alerta tátil de pedidos prontos no bolso, seletor de fatias para pizzas (4, 6, 8 e 12 fatias com cálculo automático), comandas individuais por pessoa e modo tela sempre acesa (Wake Lock).',
           tags: ['Flutter (Dev)', 'ERP Web Sync', 'Haptic Feedback', 'Comandas Individuais']
         },
         {
@@ -69,7 +69,7 @@ export const translations = {
           number: '03',
           title: 'KDS (Monitor de Cozinha em Tempo Real)',
           subtitle: 'Eliminação de comandas de papel',
-          description: 'Tema escuro de alta visibilidade projetado para iluminação industrial. Roteamento inteligente por praças de preparo (Bar, Quentes, Forno) com cronômetro integrado e alertas visuais de urgência após 20 minutos de espera.',
+          description: 'Tema escuro de alta visibilidade projetado para ambientes iluminados. Roteamento inteligente por praças de preparo (Bar, Cozinha, Pizzaria) com cronômetro integrado e alertas visuais de urgência após 20 minutos de espera.',
           tags: ['KDS Touch', 'Dark Theme Industrial', 'Roteamento de Praças', 'WebSockets']
         },
         {
@@ -85,6 +85,20 @@ export const translations = {
           subtitle: 'Economia contábil comprovada',
           description: 'Segregação automática de produtos monofásicos (cervejas, refrigerantes e água) gerando relatórios diretos para contadores deduzirem PIS e COFINS no Simples Nacional, além de DRE gerencial com baixa automática de insumos por ficha técnica.',
           tags: ['Produtos Monofásicos', 'DRE Gerencial', 'CMV Real', 'Ficha Técnica']
+        },
+        {
+          number: '06',
+          title: 'Controle de Estoque e Fichas Técnicas',
+          subtitle: 'Baixa automática de insumos',
+          description: 'Controle de estoque com baixa automática de insumos por ficha técnica, gerando relatórios diretos para contadores deduzirem PIS e COFINS no Simples Nacional, além de DRE gerencial com baixa automática de insumos por ficha técnica.',
+          tags: ['Produtos Monofásicos', 'DRE Gerencial', 'CMV Real', 'Ficha Técnica']
+        },
+        {
+          number: '07',
+          title: 'Inteligência Artificial e relatórios detalhados',
+          subtitle: 'Grok Ia e Data analysis',
+          description: 'Análises gerenciais realizadas por inteligência artificial, cruzando dados de diversas fontes para gerar relatórios completos e personalizados, em tempo real.',
+          tags: ['Inteligência Artificial', 'Data Analysis', 'Grok Ia']
         }
       ],
       cta: 'Conversar sobre o SGR'
@@ -92,16 +106,16 @@ export const translations = {
     krosmox: {
       sectionTitle: 'Krosmox e Ecossistema ERP',
       badge: 'Software Sob Medida • SaaS Multi-Tenant',
-      siteBadge: 'Portal Oficial',
+      siteBadge: 'StartUp',
       siteTitle: 'Krosmox — Software Sob Medida',
       siteTagline: 'Software cortado à medida exata do seu negócio.',
       siteDesc: 'Desenvolvimento de software sob medida e diagnóstico de processos antes de qualquer linha de código. Conheça as soluções corporativas e produtos desenvolvidos no portal oficial.',
       siteUrl: 'https://krosmox.vercel.app/',
       visitSiteBtn: 'Conhecer krosmox.vercel.app',
-      erpBadge: 'SaaS Multi-Tenant em Produção',
+      erpBadge: 'ERP Assistência Técnica',
       erpTitle: 'KrosERP — Gestão Empresarial e Ordens de Serviço',
       erpTagline: 'Automação operacional, controle financeiro e inteligência de atendimento em Django.',
-      erpDesc: 'Plataforma SaaS Multi-Tenant desenvolvida em Python e Django com isolamento estrito de dados por CompanyMiddleware e thread-local. Criado para empresas de serviços, manutenção e comércios que precisam de controle total de O.S., frente de caixa ágil e conciliação financeira.',
+      erpDesc: 'Plataforma ERP desenvolvida em Python e Django com isolamento estrito de dados por CompanyMiddleware e thread-local. Criado para empresas de serviços, manutenção e comércios que precisam de controle total de O.S., frente de caixa ágil e conciliação financeira.',
       featuresTitle: 'Módulos e Pilares Técnicos do KrosERP',
       features: [
         {
@@ -129,22 +143,14 @@ export const translations = {
         'Python',
         'Django',
         'PostgreSQL',
-        'CompanyMiddleware',
-        'Multi-Tenant SaaS',
-        'Evolution API (WhatsApp)'
+        'Multi-Tenant',
+        'Atendimento Automático (WhatsApp)'
       ]
     },
     alsoBuilt: {
-      sectionTitle: 'Também construí',
+      sectionTitle: 'Projetos de Estudo',
       allGithub: 'Ver todos no GitHub',
       projects: [
-        {
-          title: 'PDV e Gestão de Assistência Técnica',
-          desc: 'Sistema backend para controle de ordens de serviço, clientes, estoque de peças e orçamentos.',
-          language: 'Python',
-          tech: 'Django • MySQL',
-          url: 'https://github.com/omlobao/pdvassistencia'
-        },
         {
           title: 'Flix API RESTful',
           desc: 'API completa em Django REST Framework para gerenciamento e catálogo de mídias, atores e avaliações com JWT.',
@@ -165,6 +171,13 @@ export const translations = {
           language: 'Python',
           tech: 'Python • Web',
           url: 'https://github.com/omlobao/Projeto-Triagem-'
+        },
+        {
+          title: 'Banco de Dados Spotify',
+          desc: 'Projeto do Curso Administrador de banco de dados do SENAI-DF',
+          language: 'SQL',
+          tech: 'SQL Server',
+          url: 'https://github.com/omlobao/Banco-de-Dados-Spotify'
         },
         {
           title: 'Gestão Hoteleira .NET',
@@ -352,13 +365,13 @@ export const translations = {
       top: 'Top'
     },
     profile: {
-      role: 'Full Stack & Back-End Python Developer • Postgraduate Student in Full Stack Software Engineering',
+      role: 'Systems Analyst • Full Stack and Back-End Python Developer • Postgraduate Student in Full Stack Software Engineering',
       locationLabel: 'Location',
       locationVal: 'Taguatinga-DF, Brazil',
       timeLabel: 'Local Time',
       focusLabel: 'Core Stack',
       focusVal: 'Python • PostgreSQL • Django',
-      bio: 'Full Stack & Back-End Python Developer with expertise in relational databases, RESTful APIs, and cloud infrastructure, graduated in Systems Analysis and Development, and postgraduate student in Full Stack Software Engineering.',
+      bio: 'Full Stack and Back-End Python Developer with expertise in relational databases, RESTful APIs, and infrastructure, graduated in Systems Analysis and Development, and postgraduate student in Full Stack Software Engineering.',
       quote: 'My hobby is analyzing problems and engineering technical solutions to solve them.',
       quoteOrigin: '— the mindset that gave birth to Krosmox SGR.',
       copyEmail: 'Copy e-mail',
@@ -373,7 +386,7 @@ export const translations = {
       architecture: 'Multi-Tenant Architecture',
       status: '● Live in Production',
       title: 'Krosmox SGR',
-      tagline: 'Multi-System Gastronomy ERP and Operational Engineering',
+      tagline: 'Gastronomy Management ERP and Operational Engineering',
       headline: 'Your entire operation in one place, from inventory to order delivery.',
       subheadline: 'Far beyond a standalone mobile app, SGR is a complete multi-system ERP accessed via web browser and integrated with a dedicated floor waiter app in Flutter (in active development). Its core mission is to streamline floor operations for waitstaff through a clean, ultra-fluid, and ergonomic interface with total focus on speed and efficiency — while empowering bar and kitchen to bill 100% independently on the same dining floor via multi-company payment split.',
       demoUrl: 'https://sgr-demo.vercel.app/login',
@@ -384,10 +397,10 @@ export const translations = {
       demoPassLabel: 'Demo Pass',
       demoAlert: 'Note: The back-end for this demo is hosted on Render free tier. If the instance is sleeping, the initial request may take around 1 minute to wake up the server.',
       stats: [
-        { value: '-15 min', label: 'Table Turnaround', desc: 'No more waitstaff walking to the kitchen to deliver orders.' },
-        { value: '4% to 7%', label: 'Tax Savings', desc: 'Automatic single-phase tax segregation' },
-        { value: 'Multi-CNPJ', label: 'Payment Split', desc: 'Bar and kitchen billed independently in a single guest transaction.' },
-        { value: '< 10 min', label: 'Onboarding', desc: 'Simple, frictionless learning curve.' }
+        { value: 'Efficiency', label: 'Waitstaff is Not the Road Runner', desc: 'No more servers running back and forth to the kitchen.' },
+        { value: 'Tax & Fiscal', label: 'Taxes and Compliance', desc: 'Fully compliant with all tax and fiscal regimes.' },
+        { value: 'Independence', label: 'Payment Split', desc: 'Bar and kitchen billed independently in a single transaction.' },
+        { value: 'Onboarding', label: 'Streamlined', desc: 'Simple, frictionless learning curve for new staff.' }
       ],
       pillarsTitle: 'Operational Engineering Pillars',
       pillarsSubtitle: 'Click any pillar to expand details',
@@ -396,7 +409,7 @@ export const translations = {
           number: '01',
           title: 'Waiter Mobile App (Flutter • In Development)',
           subtitle: 'Clean, fluid interface built for floor speed',
-          description: 'Directly synchronized with the web ERP core via REST APIs and WebSockets. Built to eliminate operational friction with a rapid 60fps interface, in-pocket haptic vibration alerts for ready orders, proportional pizza slice selector (4, 6, 8, 12 slices), individual guest tabs, and screen Wake-Lock mode.',
+          description: 'Directly synchronized with the web ERP core via REST APIs and WebSockets. Built to eliminate operational friction with a clean, fast interface, in-pocket haptic vibration alerts for ready orders, proportional pizza slice selector (4, 6, 8, and 12 slices with automatic calculation), individual guest tabs, and screen Wake-Lock mode.',
           tags: ['Flutter (Dev)', 'ERP Web Sync', 'Haptic Feedback', 'Guest Tabs']
         },
         {
@@ -410,7 +423,7 @@ export const translations = {
           number: '03',
           title: 'Real-Time KDS (Kitchen Display System)',
           subtitle: 'Eliminating paper tickets',
-          description: 'High-contrast ergonomic dark theme engineered for industrial kitchen lighting. Station-based smart routing (Bar, Grill, Pizza Oven) with live cook timers and visual alert escalation after 20 minutes of queue time.',
+          description: 'High-contrast ergonomic dark theme engineered for brightly lit environments. Station-based smart routing (Bar, Kitchen, Pizza Station) with live cook timers and visual alert escalation after 20 minutes of queue time.',
           tags: ['KDS Touch', 'Industrial Dark Theme', 'Station Routing', 'WebSockets']
         },
         {
@@ -426,6 +439,20 @@ export const translations = {
           subtitle: 'Software that pays for itself in tax savings',
           description: 'Automatic classification of single-phase tax beverage items (beers, sodas, water) delivering ready-made deduction reports to accountants for Simples Nacional, paired with real Cost of Goods Sold (COGS) inventory depletion per recipe.',
           tags: ['Tax Deductions', 'Financial Reports', 'Recipe Costing', 'COGS']
+        },
+        {
+          number: '06',
+          title: 'Inventory Control and Technical Recipe Costing',
+          subtitle: 'Automated ingredient depletion',
+          description: 'Inventory control with automatic depletion of raw materials per recipe breakdown, generating direct reports for accountants to deduct PIS and COFINS in Simples Nacional, alongside managerial P&L statements with automated ingredient depletion per technical recipe.',
+          tags: ['Single-Phase Tax', 'Managerial P&L', 'Real COGS', 'Recipe Costing']
+        },
+        {
+          number: '07',
+          title: 'Artificial Intelligence and Detailed Reports',
+          subtitle: 'Grok AI and Data Analysis',
+          description: 'Managerial analysis powered by artificial intelligence, cross-referencing multi-source operational data to generate complete, personalized reports in real time.',
+          tags: ['Artificial Intelligence', 'Data Analysis', 'Grok AI']
         }
       ],
       cta: 'Discuss SGR Architecture'
@@ -433,16 +460,16 @@ export const translations = {
     krosmox: {
       sectionTitle: 'Krosmox and ERP Ecosystem',
       badge: 'Custom Software • Multi-Tenant SaaS',
-      siteBadge: 'Official Portal',
+      siteBadge: 'StartUp',
       siteTitle: 'Krosmox — Tailor-Made Software',
       siteTagline: 'Software cut to the exact operational measure of your business.',
       siteDesc: 'Custom software engineering and operational bottleneck diagnosis before writing a single line of code. Explore production-ready software solutions on the official portal.',
       siteUrl: 'https://krosmox.vercel.app/',
       visitSiteBtn: 'Visit krosmox.vercel.app',
-      erpBadge: 'Production Multi-Tenant SaaS',
+      erpBadge: 'ERP Technical Service',
       erpTitle: 'KrosERP — Enterprise Management and Work Orders',
       erpTagline: 'Operational automation, financial control, and bot messaging powered by Django.',
-      erpDesc: 'A robust single-database / multi-tenant SaaS platform built in Python and Django, featuring strict data isolation via CompanyMiddleware and thread-local scoping. Engineered for service companies, maintenance repair shops, and commercial venues requiring comprehensive work order lifecycles, fast POS checkout, and financial auditing.',
+      erpDesc: 'ERP platform built with Python and Django featuring strict data isolation via CompanyMiddleware and thread-local scoping. Engineered for service companies, maintenance repair shops, and retailers requiring comprehensive work order management, fast POS checkout, and financial reconciliation.',
       featuresTitle: 'KrosERP Modules and Technical Architecture',
       features: [
         {
@@ -470,22 +497,14 @@ export const translations = {
         'Python',
         'Django',
         'PostgreSQL',
-        'CompanyMiddleware',
-        'Multi-Tenant SaaS',
-        'Evolution API (WhatsApp)'
+        'Multi-Tenant',
+        'Automated Customer Service (WhatsApp)'
       ]
     },
     alsoBuilt: {
-      sectionTitle: 'Also Built',
+      sectionTitle: 'Study Projects',
       allGithub: 'View all on GitHub',
       projects: [
-        {
-          title: 'Repair Shop POS and Work Orders',
-          desc: 'Backend management system for repair tickets, technical diagnostic records, replacement parts inventory, and budget estimates.',
-          language: 'Python',
-          tech: 'Django • MySQL',
-          url: 'https://github.com/omlobao/pdvassistencia'
-        },
         {
           title: 'Flix RESTful API',
           desc: 'Production-ready REST API built with Django REST Framework for media cataloging, actor relations, pagination, and JWT authentication.',
@@ -506,6 +525,13 @@ export const translations = {
           language: 'Python',
           tech: 'Python • Web',
           url: 'https://github.com/omlobao/Projeto-Triagem-'
+        },
+        {
+          title: 'Spotify Database',
+          desc: 'Database Administrator course project developed at SENAI-DF.',
+          language: 'SQL',
+          tech: 'SQL Server',
+          url: 'https://github.com/omlobao/Banco-de-Dados-Spotify'
         },
         {
           title: 'Hotel Management .NET',
