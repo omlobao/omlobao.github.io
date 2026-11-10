@@ -2,45 +2,58 @@ export const personalData = {
   name: 'Matheus de Oliveira Lobão Vieira',
   shortName: 'Matheus Lobão',
   handle: 'omlobao',
-  role: 'Desenvolvedor Back-End Python • Pós-graduando em Arquitetura de Software',
-  subRole: 'Django • REST APIs • PostgreSQL/MySQL • C# .NET',
+  role: 'Desenvolvedor Full Stack & Back-End Python • Pós-graduando em Engenharia de Software Full Stack',
+  subRole: 'Django REST • FastAPI • React / React Native • PostgreSQL / MySQL',
   location: 'Taguatinga — Distrito Federal, Brasil',
   email: 'omlobao@gmail.com',
-  phone1: '(71) 99117-5273',
-  phone2: '(61) 9327-0062',
-  whatsappUrl: 'https://wa.me/5571991175273?text=Ol%C3%A1%20Matheus%2C%20vi%20seu%20portfolio%20e%20gostaria%20de%20conversar!',
+  phone1: '(61) 9327-0062',
+  phone2: '(71) 9117-5273',
+  whatsappUrl: 'https://wa.me/5561993270062?text=Ol%C3%A1%20Matheus%2C%20vi%20seu%20portfolio%20e%20gostaria%20de%20conversar!',
   githubUrl: 'https://github.com/omlobao',
-  linkedinUrl: 'https://linkedin.com/in/omlobao',
-  cvPdfUrl: '/curriculo-matheus.pdf',
+  linkedinUrl: 'https://www.linkedin.com/in/omlobao',
+  cvPdfUrl: './curriculo-matheus.pdf',
   manifesto: 'Meu passatempo é analisar problemas e pensar em soluções técnicas para resolvê-los. — visão que deu origem ao Krosmox SGR.',
-  about: 'Desenvolvedor Back-End Python com conhecimentos em bancos de dados relacionais e infraestrutura, graduado em Análise e Desenvolvimento de Sistemas e Pós-graduando em Engenharia de Software.'
+  about: 'Desenvolvedor Full Stack & Back-End Python com conhecimentos em bancos de dados relacionais, APIs RESTful e infraestrutura, graduado em Análise e Desenvolvimento de Sistemas e Pós-graduando em Engenharia de Software Full Stack.'
 };
 
 export const experiences = [
   {
-    role: 'Técnico em Informática e Dispositivos Móveis',
-    company: 'Atuação Autônoma / Consultoria Técnica',
+    role: 'Desenvolvedor Full Stack',
+    company: 'Atuação Autônoma / Projetos Independentes',
     location: 'Taguatinga — DF',
-    period: 'Atual',
+    period: '2025 — Atual',
     current: true,
-    description: 'Diagnóstico e reparo avançado de placas, computadores, notebooks e smartphones; manutenção preventiva e corretiva.',
+    description: 'Desenvolvimento de aplicações multi-plataforma com base em Django Rest-Framework e React/React Native.',
     bullets: [
-      'Atendimento e consultoria direta a clientes e empresas, prestando suporte técnico especializado.',
-      'Dimensionamento e montagem de computadores personalizados e estações de trabalho de acordo com carga de trabalho.',
-      'Manutenção de Dispositivos Móveis (telas, baterias, conectores, placas, etc).'
+      'Desenvolvimento de aplicações multiplataforma de ponta a ponta com base em Django Rest-Framework e React / React Native.',
+      'Concepção de arquiteturas escaláveis de APIs RESTful com autenticação segura JWT, Webhooks e integração de meios de pagamento.',
+      'Modelagem e otimização de bancos de dados relacionais (PostgreSQL, MySQL) com foco em alta performance e integridade transacional.'
     ]
   },
   {
-    role: 'Instrutor e Técnico em Informática (Estágio)',
+    role: 'Técnico em Informática e Dispositivos Móveis',
+    company: 'Atuação Autônoma / Consultoria Técnica',
+    location: 'Taguatinga — DF',
+    period: '2015 — Atual',
+    current: true,
+    description: 'Manutenção em Notebooks, Computadores e dispositivos móveis. Reparo de placas eletrônicas.',
+    bullets: [
+      'Manutenção técnica especializada, diagnóstico e suporte em notebooks, computadores e estações de trabalho.',
+      'Reparo avançado de placas eletrônicas, substituição de componentes SMD/BGA e recuperação de dispositivos móveis.',
+      'Dimensionamento, montagem e consultoria técnica personalizada de hardware para clientes e empresas.'
+    ]
+  },
+  {
+    role: 'Professor e Instrutor de Informática',
     company: '16º Batalhão da Polícia Militar — Projeto "Saber Digital"',
     location: 'Serrinha — BA',
     period: '2019',
     current: false,
-    description: 'Instrutor de Informática no projeto social comunitário "Saber Digital", ministrando capacitação prática em informática básica e manutenção de hardware.',
+    description: 'Instrutor de Informática no projeto social comunitário "Saber Digital", ministrando aulas e manutenção de hardware.',
     bullets: [
-      'Capacitação direta de cerca de 70 alunos da comunidade local ao longo de 6 meses de projeto.',
-      'Organização de turmas, planejamento pedagógico e elaboração de material didático técnico.',
-      'Manutenção preventiva dos equipamentos dos laboratórios de informática utilizados nas aulas.'
+      'Instrutor no projeto social comunitário "Saber Digital", ministrando aulas de informática, sistemas operacionais e manutenção.',
+      'Organização pedagógica de novas turmas e elaboração de conteúdos didáticos para cerca de 70 alunos da comunidade.',
+      'Suporte técnico e manutenção preventiva em todas as máquinas e infraestrutura de rede do laboratório.'
     ]
   },
   {
@@ -49,108 +62,94 @@ export const experiences = [
     location: 'Serrinha — BA',
     period: '2018',
     current: false,
-    description: 'Análise de integridade de dados e investigação de incidentes em softwares de gestão empresarial fornecidos pela empresa.',
+    description: 'Diagnóstico e reporte de falhas em consultas no banco de dados e suporte ao usuário final.',
     bullets: [
-      'Investigação e diagnóstico de erros e inconsistências em bancos de dados relacionais das aplicações clientes.',
-      'Abertura, triagem e documentação de relatórios técnicos de bugs para a equipe de desenvolvimento.',
-      'Suporte operacional de segundo nível ao cliente final em rotinas de fechamento e emissão.'
+      'Diagnóstico e reporte de falhas e inconsistências em consultas no banco de dados relacional.',
+      'Triagem de bugs, análise de causas-raiz e geração de relatórios técnicos para a equipe de desenvolvimento.',
+      'Suporte técnico operacional de segundo nível e atendimento direto ao usuário final.'
     ]
   }
 ];
 
 export const education = [
   {
-    degree: 'Pós-graduação em Arquitetura de Software',
-    institution: 'Faculdade Anhanguera (Especialização Lato Sensu)',
+    degree: 'Pós-Graduação em Engenharia de Software Full Stack',
+    institution: 'Faculdade Anhanguera',
     location: 'EAD',
-    period: 'Atual',
-    status: 'Pós-Graduação'
+    period: '10/2027',
+    status: 'Em andamento'
   },
   {
-    degree: 'Análise e Desenvolvimento de Sistemas',
+    degree: 'Tecnólogo em Análise e Desenvolvimento de Sistemas',
     institution: 'Faculdade Estácio',
-    location: 'Serrinha / DF',
+    location: 'Taguatinga / DF',
     period: '2023 – 2026',
     status: 'Graduação'
   },
   {
     degree: 'Bacharelado em Sistemas de Informação',
-    institution: 'UNINASSAU',
+    institution: 'UNINASSAU (Cursado até o 5º semestre)',
     location: 'Salvador — BA',
     period: '2020 – 2022',
-    status: 'Graduação'
+    status: 'Ensino Superior'
   },
   {
-    degree: 'Ensino Médio e Técnico em Informática',
-    institution: 'CETEP SISAL',
+    degree: 'Ensino Médio Técnico em Informática',
+    institution: 'CETEP-SISAL Serrinha - BA',
     location: 'Serrinha — BA',
     period: '2016 – 2019',
-    status: 'Curso Técnico'
+    status: 'Formação Técnica'
   }
 ];
 
 export const certifications = [
   {
-    title: 'Administrador de Banco de Dados',
-    issuer: 'SENAI Taguatinga - DF',
-    year: '2026',
-    status: 'Curso Complementar',
-    highlight: 'Modelagem conceitual, lógica, criação e administração de banco de dados MySQL (200H).'
-  },
-  {
-    title: 'Desenvolvedor Python',
-    issuer: 'SENAI Taguatinga - DF',
-    year: '2026',
-    status: 'Curso Complementar',
-    highlight: 'Desenvolvimento de aplicações desktop e APIs com Python (200H).'
-  },
-  {
-    title: 'Desenvolvedor Django',
-    issuer: 'SENAI Taguatinga - DF',
-    year: '2026',
-    status: 'Curso Complementar',
-    highlight: 'Desenvolvimento FullStack com framework Django (60H).'
-  },
-  {
-    title: 'Desenvolvimento Rápido em Python para Cloud, IoT e Big Data',
-    issuer: 'Faculdade Estácio',
-    year: '2025',
-    status: 'Certificação',
-    highlight: 'Arquiteturas para microsserviços e processamento distribuído.'
-  },
-  {
-    title: 'Programação de Algoritmos Escaláveis',
-    issuer: 'Faculdade Estácio',
-    year: '2025',
-    status: 'Certificação',
-    highlight: 'Complexidade de tempo/espaço (Big-O) e estruturas avançadas.'
-  },
-  {
-    title: 'Programação de Sistemas de Informação e Internet',
-    issuer: 'Faculdade Estácio',
-    year: '2025',
-    status: 'Certificação',
-    highlight: 'Padrões de projeto, MVC/MVT, segurança HTTP e APIs REST.'
-  },
-  {
-    title: 'Programação para Dispositivos Móveis',
+    title: 'Certificação: Programação de Algoritmos Escaláveis',
     issuer: 'Faculdade Estácio',
     year: '2024',
     status: 'Certificação',
-    highlight: 'Conceitos de ciclo de vida mobile e desenvolvimento de apps.'
+    highlight: 'Complexidade de tempo/espaço (Big-O), estruturas de dados avançadas e algoritmos eficientes.'
+  },
+  {
+    title: 'Certificação: Programação para Internet',
+    issuer: 'Faculdade Estácio',
+    year: '2024',
+    status: 'Certificação',
+    highlight: 'Protocolos web, segurança HTTP, APIs REST e desenvolvimento web moderno.'
+  },
+  {
+    title: 'Certificação: Desenvolvimento Rápido de Aplicações em Python para Cloud, IoT e BigData',
+    issuer: 'Faculdade Estácio',
+    year: '2024',
+    status: 'Certificação',
+    highlight: 'Arquiteturas para microsserviços, integração em nuvem e processamento escalável em Python.'
+  },
+  {
+    title: 'Certificação: Programação de Sistemas de Informação',
+    issuer: 'Faculdade Estácio',
+    year: '2024',
+    status: 'Certificação',
+    highlight: 'Padrões de projeto, modelagem orientada a objetos e integração de sistemas corporativos.'
+  },
+  {
+    title: 'Curso Livre: Administrador de Banco de Dados',
+    issuer: 'SENAI Taguatinga - DF',
+    year: '2024',
+    status: 'Curso Livre',
+    highlight: 'Modelagem conceitual, lógica e física, queries complexas, triggers, views, functions e procedures (200H).'
   }
 ];
 
 export const skillCategories = [
   {
-    category: 'Back-End e APIs',
+    category: 'Engenharia de Software e APIs',
     skills: [
       { name: 'Python', level: 'Avançado' },
       { name: 'Django / DRF', level: 'Avançado' },
-      { name: 'C# / .NET', level: 'Intermediário' },
-      { name: 'RESTful Architecture', level: 'Avançado' },
-      { name: 'Autenticação JWT / Session', level: 'Avançado' },
-      { name: 'WebSockets em Tempo Real', level: 'Intermediário' }
+      { name: 'FastAPI', level: 'Avançado' },
+      { name: 'JWT e Webhooks', level: 'Avançado' },
+      { name: 'UML e Requisitos', level: 'Avançado' },
+      { name: 'Scrum / Kanban', level: 'Avançado' }
     ]
   },
   {
@@ -159,25 +158,27 @@ export const skillCategories = [
       { name: 'PostgreSQL', level: 'Avançado' },
       { name: 'MySQL', level: 'Avançado' },
       { name: 'SQL Server', level: 'Intermediário' },
-      { name: 'Modelagem Relacional', level: 'Avançado' },
-      { name: 'Migrações e Integridade', level: 'Avançado' }
+      { name: 'Functions / Triggers / Views', level: 'Avançado' },
+      { name: 'Modelagem Conceitual/Lógica', level: 'Avançado' }
     ]
   },
   {
     category: 'Mobile e Front-End',
     skills: [
+      { name: 'React', level: 'Avançado' },
+      { name: 'React Native', level: 'Intermediário' },
       { name: 'Flutter', level: 'Prático / Aplicado' },
-      { name: '.NET MAUI', level: 'Intermediário' },
-      { name: 'React / JavaScript', level: 'Intermediário' },
-      { name: 'HTML5 e CSS3', level: 'Avançado' }
+      { name: 'JavaScript / HTML5 / CSS3', level: 'Avançado' }
     ]
   },
   {
-    category: 'Sistemas e Infraestrutura',
+    category: 'DevOps, Infraestrutura e Idiomas',
     skills: [
-      { name: 'Redes Estruturadas e Wi-Fi', level: 'Avançado' },
-      { name: 'Diagnóstico de Hardware e Placas', level: 'Avançado' },
-      { name: 'Linux / Shell / Git', level: 'Avançado' },
+      { name: 'Docker e GitHub Actions', level: 'Avançado' },
+      { name: 'Linux e Shell Script', level: 'Avançado' },
+      { name: 'VMware e Virtualização', level: 'Avançado' },
+      { name: 'Inglês', level: 'Intermediário' },
+      { name: 'Espanhol', level: 'Intermediário' }
     ]
   }
 ];

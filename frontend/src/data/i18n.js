@@ -11,14 +11,15 @@ export const translations = {
       top: 'Topo'
     },
     profile: {
-      role: 'Desenvolvedor Back-End Python • Pós-graduando em Arquitetura de Software',
+      role: 'Desenvolvedor Full Stack & Back-End Python • Pós-graduando em Engenharia de Software Full Stack',
       locationLabel: 'Onde vivo',
       locationVal: 'Taguatinga-DF, Brasil',
       timeLabel: 'Hora Local',
       focusLabel: 'Foco Técnico',
       focusVal: 'Python • PostgreSQL • Django',
-      bio: 'Desenvolvedor Back-End Python com conhecimentos em bancos de dados relacionais e infraestrutura, graduado em Análise e Desenvolvimento de Sistemas e Pós-graduando em Engenharia de Software.',
+      bio: 'Desenvolvedor Full Stack & Back-End Python com conhecimentos em bancos de dados relacionais, APIs RESTful e infraestrutura, graduado em Análise e Desenvolvimento de Sistemas e Pós-graduando em Engenharia de Software Full Stack.',
       quote: 'Meu passatempo é analisar problemas e pensar em soluções técnicas para resolvê-los.',
+      quoteOrigin: '— visão que deu origem ao Krosmox SGR.',
       copyEmail: 'Copiar e-mail',
       emailCopied: 'E-mail copiado!',
       downloadCv: 'Baixar CV (PDF)',
@@ -182,82 +183,71 @@ export const translations = {
       ]
     },
     credentials: {
-      sectionTitle: 'Certificações e Formação',
+      sectionTitle: 'Formação Acadêmica e Certificações',
       badge: 'Credenciais',
       list: [
         {
-          title: 'Pós-graduação em Arquitetura de Software',
-          issuer: 'Faculdade Anhanguera (Especialização Lato Sensu)',
-          year: 'Atual',
-          status: 'Em andamento'
+          title: 'Pós-Graduação em Engenharia de Software Full Stack',
+          issuer: 'Faculdade Anhanguera',
+          year: '10/2027',
+          status: 'Em andamento',
+          highlight: 'Arquitetura de software, microsserviços, cloud computing e engenharia full stack.'
         },
         {
-          title: 'Curso Livre: Administrador de Banco de Dados',
-          issuer: 'SENAI Taguatinga - DF',
-          year: '2026',
-          status: 'Concluído',
-          highlight: 'Modelagem conceitual, lógica, criação e administração de banco de dados MySQL (200H).'
-        },
-        {
-          title: 'Curso Livre: Desenvolvedor Python',
-          issuer: 'SENAI Taguatinga - DF',
-          year: '2026',
-          status: 'Concluído',
-          highlight: 'Desenvolvimento de aplicações desktop e APIs com Python (200H).'
-        },
-        {
-          title: 'Curso Livre: Desenvolvedor Django',
-          issuer: 'SENAI Taguatinga - DF',
-          year: '2026',
-          status: 'Concluído',
-          highlight: 'Desenvolvimento FullStack com framework Django (60H).'
-        },
-        {
-          title: 'Análise e Desenvolvimento de Sistemas',
+          title: 'Tecnólogo em Análise e Desenvolvimento de Sistemas',
           issuer: 'Faculdade Estácio',
           year: '2023 – 2026',
-          status: 'Concluído'
+          status: 'Graduação',
+          highlight: 'Engenharia de requisitos, modelagem de sistemas, POO e ciclo de vida de software.'
         },
         {
           title: 'Bacharelado em Sistemas de Informação',
           issuer: 'UNINASSAU (Cursado até o 5º semestre)',
           year: '2020 – 2022',
-          status: 'Trancado',
-          highlight: 'Sólida base em POO, Algoritmos e Estrutura de Dados.'
+          status: 'Ensino Superior',
+          highlight: 'Sólida base acadêmica em algoritmos, estrutura de dados e bancos de dados.'
         },
         {
-          title: 'Ensino Médio e Técnico em Informática',
-          issuer: 'CETEP SISAL',
+          title: 'Ensino Médio Técnico em Informática',
+          issuer: 'CETEP-SISAL Serrinha - BA',
           year: '2016 – 2019',
-          status: 'Formação Técnica'
-        },
-        {
-          title: 'Certificação: Desenvolvimento Rápido em Python para Cloud, IoT e Big Data',
-          issuer: 'Faculdade Estácio',
-          year: '2024',
-          status: 'Concluído',
-          highlight: 'Arquiteturas para microsserviços e processamento distribuído.'
+          status: 'Formação Técnica',
+          highlight: 'Fundamentos de programação, arquitetura de hardware e redes de computadores.'
         },
         {
           title: 'Certificação: Programação de Algoritmos Escaláveis',
           issuer: 'Faculdade Estácio',
           year: '2024',
-          status: 'Concluído',
-          highlight: 'Complexidade de tempo/espaço (Big-O) e estruturas avançadas.'
+          status: 'Certificação',
+          highlight: 'Complexidade de tempo/espaço (Big-O), estruturas de dados avançadas e algoritmos eficientes.'
         },
         {
-          title: 'Certificação: Programação de Sistemas de Informação e Internet',
+          title: 'Certificação: Programação para Internet',
           issuer: 'Faculdade Estácio',
           year: '2024',
-          status: 'Concluído',
-          highlight: 'Padrões de projeto, MVC/MVT, segurança HTTP e APIs REST.'
+          status: 'Certificação',
+          highlight: 'Protocolos web, segurança HTTP, APIs REST e desenvolvimento web moderno.'
         },
         {
-          title: 'Certificação: Programação para Dispositivos Móveis',
+          title: 'Certificação: Desenvolvimento Rápido de Aplicações em Python para Cloud, IoT e BigData',
           issuer: 'Faculdade Estácio',
           year: '2024',
-          status: 'Concluído',
-          highlight: 'Conceitos de ciclo de vida mobile e desenvolvimento de apps.'
+          status: 'Certificação',
+          highlight: 'Arquiteturas para microsserviços, integração em nuvem e processamento escalável em Python.'
+        },
+        {
+          title: 'Certificação: Programação de Sistemas de Informação',
+          issuer: 'Faculdade Estácio',
+          year: '2024',
+          status: 'Certificação',
+          highlight: 'Padrões de projeto, modelagem orientada a objetos e integração de sistemas corporativos.'
+        },
+        {
+          title: 'Curso Livre: Administrador de Banco de Dados',
+          issuer: 'SENAI Taguatinga - DF',
+          year: '2024',
+          status: 'Curso Livre',
+          highlight: 'Modelagem conceitual, lógica e física, queries complexas, triggers, views, functions e procedures (200H).'
         }
       ]
     },
@@ -266,25 +256,36 @@ export const translations = {
       badge: 'Experiência',
       list: [
         {
-          role: 'Técnico em Informática e Dispositivos Móveis',
-          company: 'Atuação Autônoma / Consultoria Técnica',
+          role: 'Desenvolvedor Full Stack',
+          company: 'Atuação Autônoma / Projetos Independentes',
           location: 'Taguatinga — DF',
-          period: 'Atual',
+          period: '2025 — Atual',
           bullets: [
-            'Atendimento e consultoria direta a clientes e empresas, prestando suporte técnico especializado.',
-            'Dimensionamento e montagem de computadores personalizados e estações de trabalho de acordo com carga de trabalho.',
-            'Manutenção de Dispositivos Móveis (telas, baterias, conectores, placas, etc).'
+            'Desenvolvimento de aplicações multiplataforma de ponta a ponta com base em Django Rest-Framework e React / React Native.',
+            'Concepção de arquiteturas escaláveis de APIs RESTful com autenticação segura JWT, Webhooks e integração de meios de pagamento.',
+            'Modelagem e otimização de bancos de dados relacionais (PostgreSQL, MySQL) com foco em alta performance e integridade transacional.'
           ]
         },
         {
-          role: 'Instrutor e Técnico em Informática (Estágio)',
+          role: 'Técnico em Informática e Dispositivos Móveis',
+          company: 'Atuação Autônoma / Consultoria Técnica',
+          location: 'Taguatinga — DF',
+          period: '2015 — Atual',
+          bullets: [
+            'Manutenção técnica especializada, diagnóstico e suporte em notebooks, computadores e estações de trabalho.',
+            'Reparo avançado de placas eletrônicas, substituição de componentes SMD/BGA e recuperação de dispositivos móveis.',
+            'Dimensionamento, montagem e consultoria técnica personalizada de hardware para clientes e empresas.'
+          ]
+        },
+        {
+          role: 'Professor e Instrutor de Informática',
           company: '16º Batalhão da Polícia Militar — Projeto "Saber Digital"',
           location: 'Serrinha — BA',
           period: '2019',
           bullets: [
-            'Instrutor no projeto social comunitário "Saber Digital", ministrando aulas de informática e manutenção de hardware.',
-            'Capacitação direta de cerca de 70 alunos da comunidade ao longo de 6 meses de projeto.',
-            'Organização pedagógica de turmas e manutenção preventiva dos equipamentos do laboratório.'
+            'Instrutor no projeto social comunitário "Saber Digital", ministrando aulas de informática, sistemas operacionais e manutenção.',
+            'Organização pedagógica de novas turmas e elaboração de conteúdos didáticos para cerca de 70 alunos da comunidade.',
+            'Suporte técnico e manutenção preventiva em todas as máquinas e infraestrutura de rede do laboratório.'
           ]
         },
         {
@@ -293,9 +294,9 @@ export const translations = {
           location: 'Serrinha — BA',
           period: '2018',
           bullets: [
-            'Investigação e diagnóstico de inconsistências em bancos de dados relacionais das aplicações de clientes da empresa.',
-            'Triagem, análise de causas-raiz e documentação de relatórios técnicos de erros para os desenvolvedores.',
-            'Suporte de segundo nível a rotinas fiscais e emissão de notas em clientes finais.'
+            'Diagnóstico e reporte de falhas e inconsistências em consultas no banco de dados relacional.',
+            'Triagem de bugs, análise de causas-raiz e geração de relatórios técnicos para a equipe de desenvolvimento.',
+            'Suporte técnico operacional de segundo nível e atendimento direto ao usuário final.'
           ]
         }
       ]
@@ -351,13 +352,13 @@ export const translations = {
       top: 'Top'
     },
     profile: {
-      role: 'Back-End Python Developer • Postgraduate Student in Software Architecture',
+      role: 'Full Stack & Back-End Python Developer • Postgraduate Student in Full Stack Software Engineering',
       locationLabel: 'Location',
       locationVal: 'Taguatinga-DF, Brazil',
       timeLabel: 'Local Time',
       focusLabel: 'Core Stack',
       focusVal: 'Python • PostgreSQL • Django',
-      bio: 'Back-End Python Developer with expertise in relational databases and infrastructure, graduated in Systems Analysis and Development, and postgraduate student in Software Engineering.',
+      bio: 'Full Stack & Back-End Python Developer with expertise in relational databases, RESTful APIs, and cloud infrastructure, graduated in Systems Analysis and Development, and postgraduate student in Full Stack Software Engineering.',
       quote: 'My hobby is analyzing problems and engineering technical solutions to solve them.',
       quoteOrigin: '— the mindset that gave birth to Krosmox SGR.',
       copyEmail: 'Copy e-mail',
@@ -523,82 +524,71 @@ export const translations = {
       ]
     },
     credentials: {
-      sectionTitle: 'Credentials and Education',
-      badge: 'Academic and Certifications',
+      sectionTitle: 'Credentials & Education',
+      badge: 'Academic & Certifications',
       list: [
         {
-          title: 'Postgraduate in Software Architecture',
-          issuer: 'Anhanguera University (Postgraduate Specialization)',
-          year: 'Present',
-          status: 'In progress'
+          title: 'Postgraduate in Full Stack Software Engineering',
+          issuer: 'Anhanguera University',
+          year: '10/2027',
+          status: 'In Progress',
+          highlight: 'Software architecture, microservices, cloud computing, and full stack engineering.'
         },
         {
-          title: 'Database Administrator (DBA)',
-          issuer: 'SENAI Taguatinga - DF',
-          year: '2026',
-          status: 'Completed',
-          highlight: 'Conceptual and logical modeling, creation and administration of MySQL databases (200H).'
-        },
-        {
-          title: 'Python Developer Course',
-          issuer: 'SENAI Taguatinga - DF',
-          year: '2026',
-          status: 'Completed',
-          highlight: 'Desktop application development and RESTful APIs with Python (200H).'
-        },
-        {
-          title: 'Django Developer Course',
-          issuer: 'SENAI Taguatinga - DF',
-          year: '2026',
-          status: 'Completed',
-          highlight: 'Full-stack web development with the Django framework (60H).'
-        },
-        {
-          title: 'Systems Analysis and Development',
-          issuer: 'Faculdade Estácio',
+          title: 'Associate Degree in Systems Analysis and Development',
+          issuer: 'Estácio University',
           year: '2023 – 2026',
-          status: 'Completed'
+          status: 'Degree',
+          highlight: 'Requirements engineering, OOP, system modeling, and software engineering lifecycle.'
         },
         {
-          title: 'Bachelor in Information Systems',
-          issuer: 'UNINASSAU (Completed up to 5th semester)',
+          title: 'Bachelor of Science in Information Systems',
+          issuer: 'UNINASSAU (Attended up to 5th semester)',
           year: '2020 – 2022',
-          status: 'Deferred',
-          highlight: 'Strong foundation in OOP, Algorithms, and Data Structures.'
+          status: 'Higher Education',
+          highlight: 'Solid academic foundation in algorithms, data structures, and database systems.'
         },
         {
-          title: 'High School and Technical Degree in IT',
-          issuer: 'CETEP SISAL',
+          title: 'Technical High School in Information Technology',
+          issuer: 'CETEP-SISAL Serrinha - BA',
           year: '2016 – 2019',
-          status: 'Technical Degree'
-        },
-        {
-          title: 'Certification: Python for Cloud, IoT and Big Data',
-          issuer: 'Faculdade Estácio',
-          year: '2024',
-          status: 'Completed',
-          highlight: 'Architectures for microservices and distributed processing.'
+          status: 'Technical Diploma',
+          highlight: 'Core programming fundamentals, computer architecture, and networking.'
         },
         {
           title: 'Certification: Scalable Algorithm Programming',
-          issuer: 'Faculdade Estácio',
+          issuer: 'Estácio University',
           year: '2024',
-          status: 'Completed',
-          highlight: 'Time and space complexity (Big-O notation) and advanced data structures.'
+          status: 'Certification',
+          highlight: 'Time and space complexity (Big-O), advanced data structures, and algorithmic optimization.'
         },
         {
-          title: 'Certification: Information Systems and Internet Programming',
-          issuer: 'Faculdade Estácio',
+          title: 'Certification: Internet Programming and Web Systems',
+          issuer: 'Estácio University',
           year: '2024',
-          status: 'Completed',
-          highlight: 'Design patterns, MVC/MVT architecture, HTTP security, and RESTful APIs.'
+          status: 'Certification',
+          highlight: 'Web protocols, HTTP security, RESTful architecture, and modern web application development.'
         },
         {
-          title: 'Certification: Mobile Application Programming',
-          issuer: 'Faculdade Estácio',
+          title: 'Certification: Rapid Python Application Development for Cloud, IoT, and Big Data',
+          issuer: 'Estácio University',
           year: '2024',
-          status: 'Completed',
-          highlight: 'Mobile lifecycle architecture and app development concepts.'
+          status: 'Certification',
+          highlight: 'Microservices architecture, cloud integration, and distributed scalable Python computing.'
+        },
+        {
+          title: 'Certification: Information Systems Programming',
+          issuer: 'Estácio University',
+          year: '2024',
+          status: 'Certification',
+          highlight: 'Design patterns, object-oriented system modeling, and enterprise systems integration.'
+        },
+        {
+          title: 'Professional Course: Database Administrator (DBA)',
+          issuer: 'SENAI Taguatinga - DF',
+          year: '2024',
+          status: 'Professional Course',
+          highlight: 'Conceptual, logical, and physical modeling, complex queries, triggers, views, functions, and stored procedures (200H).'
         }
       ]
     },
@@ -607,25 +597,36 @@ export const translations = {
       badge: 'Experience',
       list: [
         {
-          role: 'Computer and Mobile Hardware Technician',
-          company: 'Independent Consulting / Freelancer',
+          role: 'Full Stack Developer',
+          company: 'Freelance / Independent Software Engineering',
           location: 'Taguatinga — DF, Brazil',
-          period: 'Present',
+          period: '2025 — Present',
           bullets: [
-            'Direct technical consulting and specialized support for individual clients and commercial businesses.',
-            'Custom PC sizing, hardware assembly, and dedicated workstation engineering tailored to specific workloads.',
-            'Mobile hardware maintenance and component-level repairs (screens, batteries, charging ports, circuit boards, etc.).'
+            'End-to-end development of cross-platform applications powered by Django REST Framework and React / React Native.',
+            'Architecture of scalable RESTful APIs with secure JWT authentication, Webhooks, and payment gateway integrations.',
+            'Relational database modeling and performance tuning (PostgreSQL, MySQL) focused on high throughput and transactional integrity.'
           ]
         },
         {
-          role: 'IT Instructor and Systems Intern',
+          role: 'IT & Mobile Device Specialist',
+          company: 'Independent Technical Consultant',
+          location: 'Taguatinga — DF, Brazil',
+          period: '2015 — Present',
+          bullets: [
+            'Specialized hardware diagnostics, technical maintenance, and performance optimization for laptops, workstations, and mobile devices.',
+            'Advanced electronic circuit board repair, component-level troubleshooting, and device restoration.',
+            'Custom hardware architecture sizing, workstation assembly, and IT consulting for private clients and commercial businesses.'
+          ]
+        },
+        {
+          role: 'Computer Science Instructor',
           company: '16th Military Police Battalion — "Saber Digital" Project',
           location: 'Serrinha — BA, Brazil',
           period: '2019',
           bullets: [
-            'Lead instructor for the community social program "Saber Digital", teaching computer maintenance and hardware basics.',
-            'Trained approximately 70 students from the local community over a 6-month period.',
-            'Curriculum development, lab hardware maintenance, and direct technical workshop support.'
+            'Technical instructor in the "Saber Digital" community initiative, teaching computing fundamentals, operating systems, and hardware repair.',
+            'Pedagogical curriculum design, lesson planning, and direct training of approximately 70 students from the local community.',
+            'Preventive maintenance and system administration of all computer lab hardware and local network infrastructure.'
           ]
         },
         {
@@ -634,9 +635,9 @@ export const translations = {
           location: 'Serrinha — BA, Brazil',
           period: '2018',
           bullets: [
-            'Investigated and diagnosed data integrity issues and SQL errors in enterprise ERP applications.',
-            'Documented bug reports and root-cause analyses for senior development teams.',
-            'Tier-2 customer support for tax calculation and invoice closing workflows.'
+            'Database error diagnosis and troubleshooting for transactional queries across relational database engines.',
+            'Root-cause bug triage and technical error documentation delivered directly to senior software engineers.',
+            'Tier-2 technical support and customer guidance for enterprise management software and business routines.'
           ]
         }
       ]
