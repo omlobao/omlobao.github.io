@@ -154,6 +154,19 @@ button {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
+.dock-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dock-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 2px;
+}
+
 .dock-link {
   font-family: var(--font-body);
   font-size: 0.825rem;
@@ -1074,41 +1087,70 @@ button {
     padding-right: 16px;
   }
 
-  /* Floating Dock - Touch-friendly swipeable pill navigation */
+  /* Floating Dock - Touch-friendly swipeable pill navigation with pinned actions */
   .floating-dock-wrapper {
     top: 10px;
-    padding: 0 10px;
+    padding: 0 8px;
     width: 100%;
   }
 
   .floating-dock {
+    width: 100%;
     max-width: 100%;
+    padding: 5px 6px;
+    gap: 4px;
+    justify-content: space-between;
+  }
+
+  /* Left: Nav links scroll smoothly with touch */
+  .dock-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    padding: 4px 6px;
-    gap: 3px;
+    flex: 1;
+    min-width: 0;
+    padding-right: 4px;
   }
 
-  .floating-dock::-webkit-scrollbar {
+  .dock-nav-links::-webkit-scrollbar {
     display: none;
   }
 
   .dock-link {
     padding: 5px 9px;
-    font-size: 0.75rem;
+    font-size: 0.775rem;
     white-space: nowrap;
     flex-shrink: 0;
   }
 
-  .dock-lang-btn {
-    padding: 4px 8px;
-    font-size: 0.725rem;
+  /* Right: Language button & Contact are PINNED and ALWAYS VISIBLE */
+  .dock-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     flex-shrink: 0;
+    padding-left: 6px;
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .dock-lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 9px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: var(--radius-full);
   }
 
   .dock-cta {
-    padding: 5px 12px;
+    padding: 5px 11px;
     font-size: 0.75rem;
     white-space: nowrap;
     flex-shrink: 0;
