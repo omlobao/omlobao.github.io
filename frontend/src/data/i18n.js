@@ -356,7 +356,7 @@ export const translations = {
       locationVal: 'Taguatinga-DF, Brazil',
       timeLabel: 'Local Time',
       focusLabel: 'Core Stack',
-      focusVal: 'Python • PostgreSQL • SGR',
+      focusVal: 'Python • PostgreSQL • Django ',
       bio: 'Back-End Python Developer with expertise in relational databases and infrastructure, graduated in Systems Analysis and Development, and postgraduate student in Software Engineering.',
       quote: 'My hobby is analyzing problems and engineering technical solutions to solve them.',
       quoteOrigin: '— the mindset that gave birth to Krosmox SGR.',
