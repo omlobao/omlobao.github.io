@@ -1,6 +1,6 @@
 import React from 'react';
 import { LanguageProvider } from './context/LanguageContext';
-import NetworkBackground from './components/NetworkBackground';
+import UniverseBackground from './components/UniverseBackground';
 import FloatingDock from './components/FloatingDock';
 import HeaderProfile from './components/HeaderProfile';
 import WhatIBuild from './components/WhatIBuild';
@@ -15,7 +15,7 @@ import FooterSection from './components/FooterSection';
 export default function App() {
   return (
     <LanguageProvider>
-      <NetworkBackground />
+      <UniverseBackground />
       <FloatingDock />
       <div className="page-container">
         <main>
