@@ -5,7 +5,8 @@ export default function Trajectory() {
   const { t } = useLanguage();
 
   return (
-    <section id="trajetoria" className="section-wrapper">
+    <section id="experiencia" className="section-wrapper" style={{ position: 'relative' }}>
+      <span id="trajetoria" style={{ position: 'absolute', top: -80, visibility: 'hidden' }}></span>
       <div className="section-title-row">
         <h2 className="section-heading">{t.trajectory.sectionTitle}</h2>
         <span className="section-link-action">{t.trajectory.badge}</span>

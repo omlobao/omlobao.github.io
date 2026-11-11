@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { flagshipProject } from '../data/projectsData';
+import PillarSimulator from './PillarSimulator';
 import {
   ChevronDown,
   ChevronUp,
@@ -160,12 +161,15 @@ export default function WhatIBuild() {
 
                   {isOpen && (
                     <div className="kc-pillar-desc">
-                      <p style={{ marginBottom: 10 }}>{pillar.description}</p>
-                      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                      <p style={{ marginBottom: 12 }}>{pillar.description}</p>
+                      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 14 }}>
                         {pillar.tags.map((tg, tIdx) => (
                           <span key={tIdx} className="kc-tag kc-tag-neutral" style={{ fontSize: '0.65rem' }}>{tg}</span>
                         ))}
                       </div>
+
+                      {/* Interactive Visual Simulator */}
+                      <PillarSimulator pillarNumber={pillar.number} />
                     </div>
                   )}
                 </div>

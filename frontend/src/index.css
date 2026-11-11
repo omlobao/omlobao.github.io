@@ -607,7 +607,8 @@ button {
 
 .kc-stat-box:hover {
   background-color: rgba(255, 255, 255, 0.06);
-  border-color: var(--border-hover);
+  border-color: rgba(255, 68, 51, 0.35);
+  transform: translateY(-2px);
 }
 
 .kc-stat-val {
@@ -692,6 +693,480 @@ button {
   margin-top: 12px;
   padding-top: 12px;
   border-top: 1px solid var(--border-subtle);
+  animation: pillarExpand 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes pillarExpand {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   PILLAR INTERACTIVE SIMULATION STYLES
+   ========================================================================== */
+.kc-sim-box {
+  margin-top: 14px;
+  background-color: rgba(12, 12, 16, 0.95);
+  border: 1px solid rgba(255, 68, 51, 0.2);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  font-family: var(--font-mono);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.kc-sim-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.kc-sim-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kc-sim-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #4ADE80;
+  box-shadow: 0 0 8px #4ADE80;
+  animation: pulse-ring 2s infinite ease-out;
+}
+
+.kc-sim-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.kc-sim-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(255, 68, 51, 0.15);
+  border: 1px solid rgba(255, 68, 51, 0.35);
+  color: var(--vermilion-light);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.kc-sim-action-btn:hover {
+  background-color: rgba(255, 68, 51, 0.25);
+  border-color: var(--vermilion);
+  transform: translateY(-1px);
+}
+
+.kc-sim-flash-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  color: #4ADE80;
+  font-size: 0.7rem;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Stock grid */
+.kc-sim-stock-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 640px) {
+  .kc-sim-stock-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kc-sim-stock-item {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  transition: border-color var(--transition-fast);
+}
+
+.kc-sim-stock-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+
+.kc-sim-stock-name {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.kc-sim-stock-deduct {
+  color: var(--vermilion-light);
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.kc-sim-progress-track {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.kc-sim-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--vermilion), #4ADE80);
+  border-radius: var(--radius-full);
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.kc-sim-stock-status {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+.kc-sim-stock-status strong {
+  color: var(--text-primary);
+}
+
+/* Metrics strip */
+.kc-sim-metrics-strip {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  flex-wrap: wrap;
+}
+
+.kc-sim-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.kc-sim-metric-lbl {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.kc-sim-metric-val {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* AI Terminal */
+.kc-sim-ai-terminal {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+
+.kc-sim-ai-query {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  color: #A78BFA;
+  margin-bottom: 8px;
+}
+
+.kc-sim-ai-prompt-sign {
+  font-weight: 700;
+  color: #C084FC;
+}
+
+.kc-sim-ai-response {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #E2E8F0;
+  border-left: 2px solid #A78BFA;
+  padding-left: 10px;
+  transition: opacity 0.2s ease;
+}
+
+.kc-sim-ai-response.loading {
+  opacity: 0.4;
+}
+
+.kc-sim-ai-badge {
+  font-weight: 700;
+  color: #A78BFA;
+  margin-right: 6px;
+}
+
+/* Split diagram */
+.kc-sim-split-diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.kc-sim-split-root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+}
+
+.kc-sim-split-lbl {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+.kc-sim-split-val {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.kc-sim-split-branches {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 580px) {
+  .kc-sim-split-branches {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kc-sim-split-card {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  position: relative;
+}
+
+.kc-sim-split-card::before {
+  content: '↳';
+  position: absolute;
+  top: -14px;
+  left: 16px;
+  color: var(--vermilion-light);
+  font-weight: 700;
+}
+
+.kc-sim-split-dest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.kc-sim-split-amount {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--vermilion-light);
+  margin-bottom: 4px;
+}
+
+.kc-sim-split-meta {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+/* KDS Tickets */
+.kc-sim-kds-tickets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 640px) {
+  .kc-sim-kds-tickets {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kc-sim-kds-card {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+}
+
+.kc-sim-kds-card.urgent {
+  border-color: rgba(255, 68, 51, 0.4);
+  background-color: rgba(255, 68, 51, 0.04);
+}
+
+.kc-sim-kds-card.ready {
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+.kc-sim-kds-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-bottom: 4px;
+}
+
+.kc-sim-kds-table {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.kc-sim-kds-timer {
+  color: #4ADE80;
+  font-weight: 600;
+}
+
+.kc-sim-kds-dish {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.kc-sim-kds-station {
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+/* Floor Grid */
+.kc-sim-floor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 580px) {
+  .kc-sim-floor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.kc-sim-table-cell {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+}
+
+.kc-sim-table-cell.occupied {
+  border-color: rgba(255, 68, 51, 0.35);
+}
+
+.kc-sim-table-cell.bill {
+  border-color: rgba(234, 179, 8, 0.35);
+}
+
+.kc-sim-table-cell.sync {
+  border-color: rgba(74, 222, 128, 0.35);
+}
+
+.kc-sim-tbl-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.kc-sim-tbl-status {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+}
+
+.kc-sim-tbl-val {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--vermilion-light);
+}
+
+/* Audit Grid */
+.kc-sim-audit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 640px) {
+  .kc-sim-audit-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kc-sim-audit-item {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.kc-sim-audit-item.highlight {
+  border-color: rgba(74, 222, 128, 0.3);
+  background-color: rgba(74, 222, 128, 0.03);
+}
+
+.kc-sim-audit-lbl {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+}
+
+.kc-sim-audit-val {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.spin-icon {
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .kc-flagship-footer {
@@ -877,6 +1352,13 @@ button {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 20px 24px;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.kc-trajectory-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 68, 51, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .kc-trajectory-top {

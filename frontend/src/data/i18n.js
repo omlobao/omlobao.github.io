@@ -5,7 +5,7 @@ export const translations = {
       projects: 'SGR',
       krosmox: 'Krosmox e ERP',
       credentials: 'Formação',
-      trajectory: 'Trajetória',
+      trajectory: 'Experiência',
       services: 'Serviços',
       contact: 'Contatar',
       top: 'Topo'
@@ -48,22 +48,22 @@ export const translations = {
         { value: 'Independência', label: 'Split de Pagamento', desc: 'Bar e cozinha faturam de forma independente em uma única transação.' },
         { value: 'Treinamento', label: 'Descomplicado', desc: 'Curva de aprendizado simples e descomplicada.' }
       ],
-      pillarsTitle: 'Pilares de Engenharia Operacional',
-      pillarsSubtitle: 'Clique para expandir cada pilar',
+      pillarsTitle: 'Alguns módulos do Sistema:',
+      pillarsSubtitle: 'Clique para expandir',
       pillars: [
         {
           number: '01',
           title: 'App do Garçom (Flutter • Em desenvolvimento)',
           subtitle: 'Interface limpa, fluida e focada em agilidade',
           description: 'Conectado diretamente ao núcleo do ERP web via API e WebSockets. Descomplica a rotina de salão com interface rápida, alerta tátil de pedidos prontos no bolso, seletor de fatias para pizzas (4, 6, 8 e 12 fatias com cálculo automático), comandas individuais por pessoa e modo tela sempre acesa (Wake Lock).',
-          tags: ['Flutter (Dev)', 'ERP Web Sync', 'Haptic Feedback', 'Comandas Individuais']
+          tags: ['Flutter', 'ERP Web Sync', 'Haptic Feedback', 'Comandas Individuais']
         },
         {
           number: '02',
           title: 'Split de Pagamentos Multi-CNPJ',
           subtitle: 'Fim da bitributação de Bar e Cozinha',
           description: 'Permite que Bar e Cozinha operem sob CNPJs distintos no mesmo salão. Em uma única transação no cartão ou Pix dinâmico, o valor da bebida é creditado na conta bancária do Bar e a comida na da Cozinha direto pelas adquirentes (Stone, PagBank, Mercado Pago). Zero intervenção manual.',
-          tags: ['Split Payment', 'Multi-CNPJ', 'Stone SDK', 'Pix Dinâmico']
+          tags: ['Split Payment', 'Multi-CNPJ', 'Stone SDK', 'Pix']
         },
         {
           number: '03',
@@ -89,16 +89,16 @@ export const translations = {
         {
           number: '06',
           title: 'Controle de Estoque e Fichas Técnicas',
-          subtitle: 'Baixa automática de insumos',
-          description: 'Controle de estoque com baixa automática de insumos por ficha técnica, gerando relatórios diretos para contadores deduzirem PIS e COFINS no Simples Nacional, além de DRE gerencial com baixa automática de insumos por ficha técnica.',
-          tags: ['Produtos Monofásicos', 'DRE Gerencial', 'CMV Real', 'Ficha Técnica']
+          subtitle: 'Baixa fracionada de insumos e reposição preditiva',
+          description: 'Desdobramento técnico de cada prato em insumos fracionados (gramas e mililitros). Cada pedido fechado no salão realiza baixa atômica no banco de dados, calculando o CMV teórico vs. realizado, alertando sobre estoque mínimo e eliminando desperdícios operacionais.',
+          tags: ['Baixa Atômica', 'Ficha Técnica Viva', 'CMV Teórico vs Real', 'Curva ABC', 'Alerta de Reposição']
         },
         {
           number: '07',
-          title: 'Inteligência Artificial e relatórios detalhados',
-          subtitle: 'Grok Ia e Data analysis',
-          description: 'Análises gerenciais realizadas por inteligência artificial, cruzando dados de diversas fontes para gerar relatórios completos e personalizados, em tempo real.',
-          tags: ['Inteligência Artificial', 'Data Analysis', 'Grok Ia']
+          title: 'Inteligência Artificial e Relatórios Detalhados',
+          subtitle: 'Grok AI e Análise Preditiva de Dados',
+          description: 'Módulo de inteligência analítica com Grok AI que cruza histórico de vendas, sazonalidade e consumo de ingredientes para antecipar demandas e gerar relatórios gerenciais e sugestões de compra em tempo real.',
+          tags: ['Inteligência Artificial', 'Grok AI', 'Data Analytics', 'Previsão de Demanda', 'Insights Executivos']
         }
       ],
       cta: 'Conversar sobre o SGR'
@@ -265,8 +265,8 @@ export const translations = {
       ]
     },
     trajectory: {
-      sectionTitle: 'Trajetória',
-      badge: 'Experiência',
+      sectionTitle: 'Experiência',
+      badge: 'Carreira',
       list: [
         {
           role: 'Desenvolvedor Full Stack',
@@ -443,16 +443,16 @@ export const translations = {
         {
           number: '06',
           title: 'Inventory Control and Technical Recipe Costing',
-          subtitle: 'Automated ingredient depletion',
-          description: 'Inventory control with automatic depletion of raw materials per recipe breakdown, generating direct reports for accountants to deduct PIS and COFINS in Simples Nacional, alongside managerial P&L statements with automated ingredient depletion per technical recipe.',
-          tags: ['Single-Phase Tax', 'Managerial P&L', 'Real COGS', 'Recipe Costing']
+          subtitle: 'Fractional ingredient depletion and predictive reordering',
+          description: 'Technical breakdown of each menu item into fractional ingredients (grams and milliliters). Every dispatched order triggers atomic stock depletion in the database, tracking theoretical vs. real COGS, signaling minimum reorder points, and preventing operational food waste.',
+          tags: ['Atomic Depletion', 'Dynamic Recipe Costing', 'Theoretical vs Real COGS', 'ABC Curve', 'Reorder Alerts']
         },
         {
           number: '07',
           title: 'Artificial Intelligence and Detailed Reports',
-          subtitle: 'Grok AI and Data Analysis',
-          description: 'Managerial analysis powered by artificial intelligence, cross-referencing multi-source operational data to generate complete, personalized reports in real time.',
-          tags: ['Artificial Intelligence', 'Data Analysis', 'Grok AI']
+          subtitle: 'Grok AI and Predictive Data Analytics',
+          description: 'Analytical intelligence engine powered by Grok AI cross-referencing sales time-series, operational history, and ingredient consumption to forecast demand and generate comprehensive real-time executive reports.',
+          tags: ['Artificial Intelligence', 'Grok AI', 'Data Analytics', 'Demand Forecasting', 'Executive Insights']
         }
       ],
       cta: 'Discuss SGR Architecture'

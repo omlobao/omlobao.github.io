@@ -15,7 +15,7 @@ export default function FloatingDock() {
           <a href="#construo" className="dock-link">{t.nav.projects}</a>
           <a href="#krosmox" className="dock-link">{t.nav.krosmox}</a>
           <a href="#certificacoes" className="dock-link">{t.nav.credentials}</a>
-          <a href="#trajetoria" className="dock-link">{t.nav.trajectory}</a>
+          <a href="#experiencia" className="dock-link">{t.nav.trajectory}</a>
           <a href="#servicos" className="dock-link">{t.nav.services}</a>
         </div>
 
