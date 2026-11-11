@@ -119,14 +119,19 @@ export default function KrosmoxSection() {
                       <IconComp size={16} color={isOpen ? 'var(--vermilion)' : 'var(--text-muted)'} />
                       <span className="kc-pillar-name">{feat.title}</span>
                     </div>
-                    {isOpen ? <ChevronUp size={16} color="var(--vermilion)" /> : <ChevronDown size={16} color="var(--text-muted)" />}
+                    <ChevronDown
+                      size={16}
+                      className={`kc-pillar-chevron ${isOpen ? 'open' : ''}`}
+                    />
                   </div>
 
-                  {isOpen && (
-                    <div className="kc-pillar-desc">
-                      <p style={{ margin: 0, lineHeight: 1.6 }}>{feat.desc}</p>
+                  <div className={`kc-pillar-collapse ${isOpen ? 'open' : ''}`}>
+                    <div className="kc-pillar-collapse-inner">
+                      <div className="kc-pillar-desc">
+                        <p style={{ margin: 0, lineHeight: 1.6 }}>{feat.desc}</p>
+                      </div>
                     </div>
-                  )}
+                  </div>
                 </div>
               );
             })}

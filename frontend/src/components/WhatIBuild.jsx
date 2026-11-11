@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { flagshipProject } from '../data/projectsData';
-import PillarSimulator from './PillarSimulator';
 import {
   ChevronDown,
   ChevronUp,
@@ -156,22 +155,24 @@ export default function WhatIBuild() {
                       <IconComp size={16} color={isOpen ? 'var(--vermilion)' : 'var(--text-muted)'} />
                       <span className="kc-pillar-name">{pillar.title}</span>
                     </div>
-                    {isOpen ? <ChevronUp size={16} color="var(--vermilion)" /> : <ChevronDown size={16} color="var(--text-muted)" />}
+                    <ChevronDown
+                      size={16}
+                      className={`kc-pillar-chevron ${isOpen ? 'open' : ''}`}
+                    />
                   </div>
 
-                  {isOpen && (
-                    <div className="kc-pillar-desc">
-                      <p style={{ marginBottom: 12 }}>{pillar.description}</p>
-                      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 14 }}>
-                        {pillar.tags.map((tg, tIdx) => (
-                          <span key={tIdx} className="kc-tag kc-tag-neutral" style={{ fontSize: '0.65rem' }}>{tg}</span>
-                        ))}
+                  <div className={`kc-pillar-collapse ${isOpen ? 'open' : ''}`}>
+                    <div className="kc-pillar-collapse-inner">
+                      <div className="kc-pillar-desc">
+                        <p style={{ marginBottom: 12 }}>{pillar.description}</p>
+                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                          {pillar.tags.map((tg, tIdx) => (
+                            <span key={tIdx} className="kc-tag kc-tag-neutral" style={{ fontSize: '0.65rem' }}>{tg}</span>
+                          ))}
+                        </div>
                       </div>
-
-                      {/* Interactive Visual Simulator */}
-                      <PillarSimulator pillarNumber={pillar.number} />
                     </div>
-                  )}
+                  </div>
                 </div>
               );
             })}
