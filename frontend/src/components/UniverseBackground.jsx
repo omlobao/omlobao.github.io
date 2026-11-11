@@ -65,18 +65,21 @@ export default function UniverseBackground() {
           this.vx = (Math.random() - 0.5) * 0.08;
           this.vy = (Math.random() - 0.5) * 0.08;
           this.color = '#FFFFFF';
+          // Twinkle properties - distant stars: very gentle, slow cosmic shimmer (~7-18s cycle)
+          this.twinkleSpeed = Math.random() * 0.0006 + 0.0003;
+          this.twinkleStrength = Math.random() * 0.12 + 0.05;
         } else {
           this.radius = Math.random() * 1.6 + 0.8;
           this.baseAlpha = Math.random() * 0.5 + 0.35;
           this.vx = (Math.random() - 0.5) * 0.22;
           this.vy = (Math.random() - 0.5) * 0.22;
           this.color = starColors[Math.floor(Math.random() * starColors.length)];
+          // Twinkle properties - main stars: smooth, organic slow shimmer (~3.5-8s cycle)
+          this.twinkleSpeed = Math.random() * 0.0012 + 0.0005;
+          this.twinkleStrength = Math.random() * 0.18 + 0.08;
         }
 
-        // Twinkle properties
-        this.twinkleSpeed = Math.random() * 0.03 + 0.01;
         this.twinklePhase = Math.random() * Math.PI * 2;
-        this.twinkleStrength = Math.random() * 0.35 + 0.15;
 
         // Mass for gravity response
         this.originX = this.x;
