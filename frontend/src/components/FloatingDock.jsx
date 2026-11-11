@@ -25,12 +25,12 @@ export default function FloatingDock() {
           <button
             onClick={toggleLang}
             className="dock-lang-btn"
-            aria-label={lang === 'pt' ? 'Mudar para inglês' : 'Switch to Portuguese'}
-            title={lang === 'pt' ? 'Switch to English' : 'Mudar para Português'}
+            aria-label={lang === 'pt' ? 'Switch to English' : 'Mudar para Português (PT-BR)'}
+            title={lang === 'pt' ? 'Switch to English' : 'Mudar para Português (PT-BR)'}
           >
             <span style={{ fontSize: '0.85rem' }}>{lang === 'pt' ? '🇺🇸' : '🇧🇷'}</span>
             <span style={{ fontWeight: 600, fontSize: '0.75rem', fontFamily: 'var(--font-mono)' }}>
-              {lang === 'pt' ? 'EN' : 'PT'}
+              {lang === 'pt' ? 'EN' : 'PT-BR'}
             </span>
           </button>
 

@@ -60,29 +60,29 @@ export const translations = {
         },
         {
           number: '02',
-          title: 'Split de Pagamentos Multi-CNPJ',
-          subtitle: 'Fim da bitributação de Bar e Cozinha',
-          description: 'Permite que Bar e Cozinha operem sob CNPJs distintos no mesmo salão. Em uma única transação no cartão ou Pix dinâmico, o valor da bebida é creditado na conta bancária do Bar e a comida na da Cozinha direto pelas adquirentes (Stone, PagBank, Mercado Pago). Zero intervenção manual.',
-          tags: ['Split Payment', 'Multi-CNPJ', 'Stone SDK', 'Pix']
+          title: 'Split de Pagamentos E Integrações com APIs de pagamentos',
+          subtitle: 'Fim do uso de várias maquininhas',
+          description: 'Permite que Bar e Restaurante operem sob CNPJs distintos no mesmo salão. Em uma única transação no cartão ou Pix, o valor é dividido entre os estabelecimentos conforme a configuração.',
+          tags: ['Split Payment', 'Integração com APis de Pagamento', 'Pix']
         },
         {
           number: '03',
           title: 'KDS (Monitor de Cozinha em Tempo Real)',
           subtitle: 'Eliminação de comandas de papel',
           description: 'Tema escuro de alta visibilidade projetado para ambientes iluminados. Roteamento inteligente por praças de preparo (Bar, Cozinha, Pizzaria) com cronômetro integrado e alertas visuais de urgência após 20 minutos de espera.',
-          tags: ['KDS Touch', 'Dark Theme Industrial', 'Roteamento de Praças', 'WebSockets']
+          tags: ['KDS Touch', 'KANBAN', 'Roteamento de Praças', 'Comandas']
         },
         {
           number: '04',
           title: 'Frente de Caixa (PDV) e Auditoria Financeira',
           subtitle: 'Controle auditável de numerário e fechamento seguro',
           description: 'Mecanismo de alta precisão e conformidade com calculadora automática de troco em tempo real, divisão de contas instantânea (2x, 3x, 4x, 5x pessoas), conferência cega de fechamento de caixa (o operador realiza a contagem física e o sistema faz o batimento com as transações registradas) e controle estrito de sangrias e cancelamentos.',
-          tags: ['PDV Ágil', 'Auditoria de Caixa', 'Fechamento Cego', 'Divisão de Cotas']
+          tags: ['PDV', 'Auditoria de Caixa', 'Divisão de Cotas']
         },
         {
           number: '05',
-          title: 'Inteligência Fiscal e CMV Real',
-          subtitle: 'Economia contábil comprovada',
+          title: 'Inteligência Fiscal',
+          subtitle: 'O seu contador vai te agradecer por isso.',
           description: 'Segregação automática de produtos monofásicos (cervejas, refrigerantes e água) gerando relatórios diretos para contadores deduzirem PIS e COFINS no Simples Nacional, além de DRE gerencial com baixa automática de insumos por ficha técnica.',
           tags: ['Produtos Monofásicos', 'DRE Gerencial', 'CMV Real', 'Ficha Técnica']
         },
@@ -108,7 +108,7 @@ export const translations = {
       badge: 'Software Sob Medida • SaaS Multi-Tenant',
       siteBadge: 'StartUp',
       siteTitle: 'Krosmox — Software Sob Medida',
-      siteTagline: 'Software cortado à medida exata do seu negócio.',
+      siteTagline: 'Software à medida exata do seu negócio.',
       siteDesc: 'Desenvolvimento de software sob medida e diagnóstico de processos antes de qualquer linha de código. Conheça as soluções corporativas e produtos desenvolvidos no portal oficial.',
       siteUrl: 'https://krosmox.vercel.app/',
       visitSiteBtn: 'Conhecer krosmox.vercel.app',
@@ -135,7 +135,7 @@ export const translations = {
           desc: 'Notificações automáticas de status de O.S. e comprovantes via WhatsApp Bot (Evolution API), além de alertas operacionais para gestores via Telegram Bot.'
         },
         {
-          title: 'Arquitetura e Segurança Zero Vulnerabilidades',
+          title: 'Arquitetura e Segurança',
           desc: 'Isolamento de tenants por slug exclusivo (sem formulário público de login exposto a brute-force), sessão única global anti-compartilhamento e CAPTCHA criptográfico com Honeypot.'
         }
       ],
@@ -414,29 +414,29 @@ export const translations = {
         },
         {
           number: '02',
-          title: 'Multi-Company Payment Split Engine',
-          subtitle: 'Ending bar and kitchen double taxation',
-          description: 'Allows venue owners to legally operate Food and Drinks under separate corporate entities on the same floor. In a single card swipe or dynamic Pix QR, food revenue routes to the Kitchen bank account and drinks route directly to the Bar bank account via gateway APIs (Stone, PagBank, Mercado Pago). Zero manual accounting.',
-          tags: ['Payment Split', 'Multi-Company', 'Stone SDK', 'Dynamic Pix']
+          title: 'Payment Split and Payment Gateway Integrations',
+          subtitle: 'No more juggling multiple card terminals',
+          description: 'Allows Bar and Restaurant to operate under distinct corporate entities on the same dining floor. In a single card swipe or Pix transaction, revenue is seamlessly divided between the establishments according to configured rules.',
+          tags: ['Split Payment', 'Payment Gateway Integration', 'Pix']
         },
         {
           number: '03',
           title: 'Real-Time KDS (Kitchen Display System)',
           subtitle: 'Eliminating paper tickets',
           description: 'High-contrast ergonomic dark theme engineered for brightly lit environments. Station-based smart routing (Bar, Kitchen, Pizza Station) with live cook timers and visual alert escalation after 20 minutes of queue time.',
-          tags: ['KDS Touch', 'Industrial Dark Theme', 'Station Routing', 'WebSockets']
+          tags: ['KDS Touch', 'KANBAN', 'Station Routing', 'Order Slips']
         },
         {
           number: '04',
           title: 'Point of Sale (POS) and Financial Audit',
           subtitle: 'Audited cash management and secure register reconciliation',
           description: 'High-precision, compliance-focused POS engine featuring real-time change calculation, instant bill splitting (2x, 3x, 4x, 5x guest quotas), blind register closing (cashiers enter physical counts before expected balances are verified), and strict audit trails for cash pulls and cancellations.',
-          tags: ['Fast POS', 'Cash Audit', 'Blind Register Close', 'Bill Split']
+          tags: ['POS', 'Cash Audit', 'Bill Split']
         },
         {
           number: '05',
-          title: 'Fiscal Intelligence and Real COGS',
-          subtitle: 'Software that pays for itself in tax savings',
+          title: 'Fiscal Intelligence',
+          subtitle: 'Your accountant will thank you for this.',
           description: 'Automatic classification of single-phase tax beverage items (beers, sodas, water) delivering ready-made deduction reports to accountants for Simples Nacional, paired with real Cost of Goods Sold (COGS) inventory depletion per recipe.',
           tags: ['Tax Deductions', 'Financial Reports', 'Recipe Costing', 'COGS']
         },
@@ -462,7 +462,7 @@ export const translations = {
       badge: 'Custom Software • Multi-Tenant SaaS',
       siteBadge: 'StartUp',
       siteTitle: 'Krosmox — Tailor-Made Software',
-      siteTagline: 'Software cut to the exact operational measure of your business.',
+      siteTagline: 'Software tailored to the exact measure of your business.',
       siteDesc: 'Custom software engineering and operational bottleneck diagnosis before writing a single line of code. Explore production-ready software solutions on the official portal.',
       siteUrl: 'https://krosmox.vercel.app/',
       visitSiteBtn: 'Visit krosmox.vercel.app',
@@ -489,7 +489,7 @@ export const translations = {
           desc: 'Automated customer status updates and receipts delivered via WhatsApp Bot (Evolution API), along with instant managerial incident alerts via Telegram Bot.'
         },
         {
-          title: 'Zero-Vulnerability Security Architecture',
+          title: 'Architecture and Security',
           desc: 'Company-specific slug routing with no public login forms exposed to brute-force attacks, global single-session anti-account sharing, and cryptographic icon CAPTCHAs with honeypot traps.'
         }
       ],
