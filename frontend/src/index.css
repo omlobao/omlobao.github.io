@@ -230,8 +230,8 @@ button {
 
 .profile-avatar-box {
   position: relative;
-  width: 84px;
-  height: 84px;
+  width: 90px;
+  height: 90px;
 }
 
 .profile-avatar-img {
@@ -239,9 +239,9 @@ button {
   height: 100%;
   border-radius: var(--radius-full);
   object-fit: cover;
-  object-position: center;
+  object-position: center 25%;
   border: 2px solid var(--border-hover);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
   transition: transform var(--transition-fast), border-color var(--transition-fast);
 }
 
