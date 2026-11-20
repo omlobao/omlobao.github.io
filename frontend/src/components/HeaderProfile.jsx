@@ -3,6 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { personalData } from '../data/resumeData';
 import { Check, Download, ArrowUpRight, Copy, Globe } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
+import { ShimmerText, FlowButton } from './spell';
 
 export default function HeaderProfile() {
   const { t, lang } = useLanguage();
@@ -58,7 +59,7 @@ export default function HeaderProfile() {
       </h1>
 
       <div className="profile-role">
-        {t.profile.role}
+        <ShimmerText variant="vermilion">{t.profile.role}</ShimmerText>
       </div>
 
       {/* Social Links Pills */}
@@ -98,14 +99,14 @@ export default function HeaderProfile() {
           {copied ? t.profile.emailCopied : t.profile.copyEmail}
         </button>
 
-        <a
+        <FlowButton
           href={t.profile.cvUrl}
           download={t.profile.cvFileName}
-          className="social-pill"
+          size="sm"
+          icon={Download}
         >
-          <Download size={13} />
           {t.profile.downloadCv}
-        </a>
+        </FlowButton>
       </div>
 
       {/* Meta Grid (Base, Hora Local, Foco) */}
@@ -120,7 +121,9 @@ export default function HeaderProfile() {
         </div>
         <div>
           <div className="meta-item-label">{t.profile.focusLabel}</div>
-          <div className="meta-item-val">{t.profile.focusVal}</div>
+          <div className="meta-item-val">
+            <ShimmerText variant="cosmic">{t.profile.focusVal}</ShimmerText>
+          </div>
         </div>
       </div>
 

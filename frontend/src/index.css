@@ -1428,3 +1428,186 @@ button {
     font-size: 1.35rem;
   }
 }
+
+/* ==========================================================================
+   SPELL UI INTEGRATION (spell.sh)
+   Components: LightRays, TiltCard, ShimmerText, FlowButton
+   ========================================================================== */
+
+/* 1. Spell UI: Light Rays Background */
+.spell-light-rays {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* Ensure Universe starfield canvas layers seamlessly above Light Rays */
+.universe-background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 2. Spell UI: 3D Tilt Card */
+.spell-tilt-card {
+  border-radius: var(--radius-md);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.spell-tilt-spotlight {
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* 3. Spell UI: Shimmer Text */
+@keyframes spell-shimmer-sweep {
+  0% {
+    background-position: 180% 0;
+  }
+  100% {
+    background-position: -180% 0;
+  }
+}
+
+.spell-shimmer-text {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 260% 100%;
+  animation: spell-shimmer-sweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.spell-shimmer-vermilion {
+  background-image: linear-gradient(
+    90deg,
+    #FF4433 0%,
+    #FFA89E 32%,
+    #FFFFFF 50%,
+    #FFA89E 68%,
+    #FF4433 100%
+  );
+}
+
+.spell-shimmer-cosmic {
+  background-image: linear-gradient(
+    90deg,
+    #A78BFA 0%,
+    #DDD6FE 32%,
+    #FFFFFF 50%,
+    #DDD6FE 68%,
+    #A78BFA 100%
+  );
+}
+
+.spell-shimmer-silver {
+  background-image: linear-gradient(
+    90deg,
+    #94A3B8 0%,
+    #CBD5E1 32%,
+    #FFFFFF 50%,
+    #CBD5E1 68%,
+    #94A3B8 100%
+  );
+}
+
+.spell-shimmer-emerald {
+  background-image: linear-gradient(
+    90deg,
+    #34D399 0%,
+    #86EFAC 32%,
+    #FFFFFF 50%,
+    #86EFAC 68%,
+    #34D399 100%
+  );
+}
+
+/* 4. Spell UI: Flow Button */
+@keyframes spell-flow-dash {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+.spell-flow-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spell-flow-svg-container {
+  position: absolute;
+  inset: -2px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.spell-flow-wrapper:hover .spell-flow-svg-container {
+  opacity: 1;
+}
+
+.spell-flow-wrapper:hover .spell-flow-path {
+  animation: spell-flow-dash 1s linear infinite;
+}
+
+.spell-flow-element {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #FFFFFF;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.spell-flow-element:hover {
+  background: rgba(255, 68, 51, 0.12);
+  border-color: rgba(255, 68, 51, 0.4);
+  color: #FFFFFF;
+  box-shadow: 0 0 16px rgba(255, 68, 51, 0.2);
+}
+
+.spell-flow-sm {
+  padding: 6px 12px;
+  font-size: 0.75rem;
+}
+
+.spell-flow-default {
+  padding: 8px 16px;
+  font-size: 0.8125rem;
+}
+
+.spell-flow-lg {
+  padding: 10px 20px;
+  font-size: 0.875rem;
+}
+
+.spell-flow-icon {
+  flex-shrink: 0;
+}
+

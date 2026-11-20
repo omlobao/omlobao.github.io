@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { personalData } from '../data/resumeData';
 import { MessageSquare, Mail, Download, ArrowUp, ArrowUpRight } from 'lucide-react';
+import { ShimmerText, FlowButton } from './spell';
 
 export default function FooterSection() {
   const { t } = useLanguage();
@@ -14,7 +15,7 @@ export default function FooterSection() {
     <footer id="contato" className="kc-footer">
       <div>
         <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: 8 }}>
-          {t.footer.title}
+          <ShimmerText variant="vermilion">{t.footer.title}</ShimmerText>
         </h3>
         <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', maxWidth: 540 }}>
           {t.footer.desc}
@@ -22,17 +23,16 @@ export default function FooterSection() {
       </div>
 
       <div className="kc-footer-actions">
-        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-          <a
+        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center' }}>
+          <FlowButton
             href={personalData.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-pill-primary"
+            size="default"
+            icon={MessageSquare}
           >
-            <MessageSquare size={15} />
             {t.footer.whatsappBtn}
-            <ArrowUpRight size={14} />
-          </a>
+          </FlowButton>
 
           <a
             href={`mailto:${personalData.email}`}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { TiltCard } from './spell';
 
 export default function Trajectory() {
   const { t } = useLanguage();
@@ -14,7 +15,7 @@ export default function Trajectory() {
 
       <div className="kc-trajectory-list">
         {t.trajectory.list.map((exp, idx) => (
-          <div key={idx} className="kc-trajectory-card">
+          <TiltCard key={idx} className="kc-trajectory-card" tiltLimit={6}>
             <div className="kc-trajectory-top">
               <span className="kc-trajectory-role">{exp.role}</span>
               <span className="kc-trajectory-period">{exp.period}</span>
@@ -29,7 +30,7 @@ export default function Trajectory() {
                 <li key={bIdx}>{b}</li>
               ))}
             </ul>
-          </div>
+          </TiltCard>
         ))}
       </div>
     </section>

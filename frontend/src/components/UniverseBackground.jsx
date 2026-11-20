@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import LightRays from './spell/LightRays';
 
 export default function UniverseBackground() {
   const canvasRef = useRef(null);
@@ -519,11 +520,24 @@ export default function UniverseBackground() {
   }, []);
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="universe-background-canvas"
-      aria-hidden="true"
-    />
+    <>
+      <LightRays
+        intensity={14}
+        rays={26}
+        reach={22}
+        position={50}
+        animation={{ animate: true, speed: 4 }}
+        raysColor={{
+          color1: '#FF4433',
+          color2: '#7C3AED',
+        }}
+      />
+      <canvas
+        ref={canvasRef}
+        className="universe-background-canvas"
+        aria-hidden="true"
+      />
+    </>
   );
 }
 
