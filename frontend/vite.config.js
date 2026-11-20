@@ -9,6 +9,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           three: ['three'],
+          motion: ['motion'],
           vendor: ['react', 'react-dom', 'lucide-react'],
         },
       },

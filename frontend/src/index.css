@@ -1429,6 +1429,20 @@ button {
   }
 }
 
+/* React Bits Integration */
+.profile-decrypted-text {
+  font-family: inherit;
+  color: var(--text-primary);
+}
+
+.kc-service-card.spotlight-card,
+.kc-trajectory-card.spotlight-card {
+  padding: 24px;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-card);
+  box-shadow: none;
+}
+
 /* ==========================================================================
    SPELL UI INTEGRATION (spell.sh)
    Components: LightRays, TiltCard, ShimmerText, FlowButton

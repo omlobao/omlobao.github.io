@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { SpotlightCard } from './reactbits';
 
 export default function Trajectory() {
   const { t } = useLanguage();
@@ -14,7 +15,14 @@ export default function Trajectory() {
 
       <div className="kc-trajectory-list">
         {t.trajectory.list.map((exp, idx) => (
-          <div key={idx} className="kc-trajectory-card">
+          <SpotlightCard
+            key={idx}
+            className="kc-trajectory-card"
+            spotlightColor="rgba(167, 139, 250, 0.22)"
+            borderGlow={0.6}
+            intensity={0.16}
+            spotlightSize={280}
+          >
             <div className="kc-trajectory-top">
               <span className="kc-trajectory-role">{exp.role}</span>
               <span className="kc-trajectory-period">{exp.period}</span>
@@ -29,7 +37,7 @@ export default function Trajectory() {
                 <li key={bIdx}>{b}</li>
               ))}
             </ul>
-          </div>
+          </SpotlightCard>
         ))}
       </div>
     </section>

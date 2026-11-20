@@ -11,25 +11,34 @@ import Certifications from './components/Certifications';
 import Trajectory from './components/Trajectory';
 import HowICanHelp from './components/HowICanHelp';
 import FooterSection from './components/FooterSection';
+import { ClickSpark } from './components/reactbits';
 
 export default function App() {
   return (
     <LanguageProvider>
       <UniverseBackground />
       <FloatingDock />
-      <div className="page-container">
-        <main>
-          <HeaderProfile />
-          <WhatIBuild />
-          <KrosmoxSection />
-          <AlsoBuilt />
-          <TechMarquee />
-          <Certifications />
-          <Trajectory />
-          <HowICanHelp />
-        </main>
-        <FooterSection />
-      </div>
+      <ClickSpark
+        sparkColor={['#FF4433', '#FFA89E', '#FFFFFF', '#A78BFA']}
+        sparkSize={10}
+        sparkRadius={24}
+        sparkCount={6}
+        duration={400}
+      >
+        <div className="page-container">
+          <main>
+            <HeaderProfile />
+            <WhatIBuild />
+            <KrosmoxSection />
+            <AlsoBuilt />
+            <TechMarquee />
+            <Certifications />
+            <Trajectory />
+            <HowICanHelp />
+          </main>
+          <FooterSection />
+        </div>
+      </ClickSpark>
     </LanguageProvider>
   );
 }

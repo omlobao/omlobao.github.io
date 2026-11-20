@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { personalData } from '../data/resumeData';
 import { ArrowUpRight } from 'lucide-react';
+import { SpotlightCard } from './reactbits';
 
 export default function HowICanHelp() {
   const { t, lang } = useLanguage();
@@ -23,7 +24,14 @@ export default function HowICanHelp() {
 
       <div className="kc-services-grid">
         {t.services.list.map((srv, idx) => (
-          <div key={idx} className="kc-service-card">
+          <SpotlightCard
+            key={idx}
+            className="kc-service-card"
+            spotlightColor="rgba(255, 68, 51, 0.25)"
+            borderGlow={0.65}
+            intensity={0.16}
+            spotlightSize={260}
+          >
             <div>
               <div className="kc-service-num">{srv.number}</div>
               <h3 className="kc-service-title">{srv.title}</h3>
@@ -42,7 +50,7 @@ export default function HowICanHelp() {
                 ))}
               </ul>
             </div>
-          </div>
+          </SpotlightCard>
         ))}
       </div>
     </section>

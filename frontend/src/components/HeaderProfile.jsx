@@ -4,6 +4,7 @@ import { personalData } from '../data/resumeData';
 import { Check, Download, ArrowUpRight, Copy, Globe } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 import { ShimmerText } from './spell';
+import { DecryptedText, Magnet } from './reactbits';
 
 export default function HeaderProfile() {
   const { t, lang } = useLanguage();
@@ -54,7 +55,15 @@ export default function HeaderProfile() {
 
       {/* Name and Handle */}
       <h1 className="profile-name">
-        {personalData.shortName}
+        <DecryptedText
+          text={personalData.shortName}
+          animateOn="view"
+          speed={45}
+          maxIterations={12}
+          sequential={true}
+          characters="01!<>-_/[]{}—=+*^?#_$%&~"
+          className="profile-decrypted-text"
+        />
         <span className="profile-handle">@{personalData.handle}</span>
       </h1>
 
@@ -64,49 +73,59 @@ export default function HeaderProfile() {
 
       {/* Social Links Pills */}
       <div className="profile-social-pills">
-        <a
-          href={personalData.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-pill"
-        >
-          <GithubIcon size={14} />
-          GitHub
-        </a>
+        <Magnet padding={28}>
+          <a
+            href={personalData.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-pill"
+          >
+            <GithubIcon size={14} />
+            GitHub
+          </a>
+        </Magnet>
 
-        <a
-          href={personalData.linkedinUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-pill"
-        >
-          <LinkedinIcon size={14} />
-          LinkedIn
-        </a>
+        <Magnet padding={28}>
+          <a
+            href={personalData.linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-pill"
+          >
+            <LinkedinIcon size={14} />
+            LinkedIn
+          </a>
+        </Magnet>
 
-        <a
-          href={personalData.whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-pill"
-        >
-          WhatsApp
-          <ArrowUpRight size={12} style={{ opacity: 0.6 }} />
-        </a>
+        <Magnet padding={28}>
+          <a
+            href={personalData.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-pill"
+          >
+            WhatsApp
+            <ArrowUpRight size={12} style={{ opacity: 0.6 }} />
+          </a>
+        </Magnet>
 
-        <button onClick={handleCopyEmail} className="social-pill">
-          {copied ? <Check size={14} color="#4ADE80" /> : <Copy size={13} />}
-          {copied ? t.profile.emailCopied : t.profile.copyEmail}
-        </button>
+        <Magnet padding={28}>
+          <button onClick={handleCopyEmail} className="social-pill">
+            {copied ? <Check size={14} color="#4ADE80" /> : <Copy size={13} />}
+            {copied ? t.profile.emailCopied : t.profile.copyEmail}
+          </button>
+        </Magnet>
 
-        <a
-          href={t.profile.cvUrl}
-          download={t.profile.cvFileName}
-          className="social-pill"
-        >
-          <Download size={13} />
-          {t.profile.downloadCv}
-        </a>
+        <Magnet padding={28}>
+          <a
+            href={t.profile.cvUrl}
+            download={t.profile.cvFileName}
+            className="social-pill"
+          >
+            <Download size={13} />
+            {t.profile.downloadCv}
+          </a>
+        </Magnet>
       </div>
 
       {/* Meta Grid (Base, Hora Local, Foco) */}
