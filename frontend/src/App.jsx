@@ -19,7 +19,7 @@ export default function App() {
       <UniverseBackground />
       <FloatingDock />
       <ClickSpark
-        sparkColor={['#FF4433', '#FFA89E', '#FFFFFF', '#A78BFA']}
+        sparkColor={['#38BDF8', '#818CF8', '#7DD3FC', '#FFFFFF']}
         sparkSize={10}
         sparkRadius={24}
         sparkCount={6}

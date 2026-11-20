@@ -4,24 +4,28 @@
    ========================================================================== */
 
 :root {
-  /* Color Tokens - Deep Space Cosmos Palette */
-  --bg-base: #05060A;
-  --bg-surface: #0D0F17;
-  --bg-card: rgba(255, 255, 255, 0.04);
-  --bg-card-hover: rgba(255, 255, 255, 0.07);
-  --bg-elevated: #131622;
-  --bg-pill: rgba(255, 255, 255, 0.07);
+  /* Color Tokens - Deep Space Cosmos Palette (High-Tech Developer Aesthetic) */
+  --bg-base: #07090E;
+  --bg-surface: #0E121B;
+  --bg-card: rgba(255, 255, 255, 0.035);
+  --bg-card-hover: rgba(56, 189, 248, 0.06);
+  --bg-elevated: #151A26;
+  --bg-pill: rgba(255, 255, 255, 0.06);
 
-  --border-subtle: rgba(255, 255, 255, 0.12);
-  --border-card: rgba(255, 255, 255, 0.16);
-  --border-hover: rgba(255, 255, 255, 0.28);
+  --border-subtle: rgba(255, 255, 255, 0.09);
+  --border-card: rgba(255, 255, 255, 0.13);
+  --border-hover: rgba(56, 189, 248, 0.35);
 
-  /* Accent: International Vermilion (Swiss / Bauhaus) */
-  --vermilion: #FF4433;
-  --vermilion-light: #FF7262;
-  --vermilion-hover: #E63828;
-  --vermilion-dim: rgba(255, 68, 51, 0.15);
-  --vermilion-glow: rgba(255, 68, 51, 0.25);
+  /* Accent: Luminous Sky / Electric Azure (Calm, Modern, High Legibility) */
+  --vermilion: #38BDF8;
+  --vermilion-light: #7DD3FC;
+  --vermilion-hover: #0284C7;
+  --vermilion-dim: rgba(56, 189, 248, 0.12);
+  --vermilion-glow: rgba(56, 189, 248, 0.24);
+
+  /* Complementary Accents */
+  --accent-indigo: #818CF8;
+  --accent-emerald: #34D399;
 
   /* Typography - High Contrast Dark Theme (WCAG AAA compliant) */
   --text-primary: #FFFFFF;
@@ -71,7 +75,7 @@ body {
 }
 
 ::selection {
-  background: var(--vermilion);
+  background: rgba(56, 189, 248, 0.35);
   color: #FFFFFF;
 }
 
@@ -307,7 +311,7 @@ button {
   height: 100%;
   background-color: #22C55E;
   border-radius: 50%;
-  animation: pulse-ring 2s infinite ease-out;
+  animation: pulse-ring 3.2s infinite ease-out;
 }
 
 @keyframes pulse-ring {
@@ -493,7 +497,7 @@ button {
 .kc-tag-vermilion {
   background-color: var(--vermilion-dim);
   color: var(--vermilion);
-  border: 1px solid rgba(255, 68, 51, 0.25);
+  border: 1px solid rgba(56, 189, 248, 0.28);
 }
 
 .kc-tag-neutral {
@@ -528,8 +532,8 @@ button {
 
 /* SGR Demo Credentials Box */
 .kc-demo-box {
-  background-color: rgba(255, 68, 51, 0.04);
-  border: 1px solid rgba(255, 68, 51, 0.22);
+  background-color: rgba(56, 189, 248, 0.04);
+  border: 1px solid rgba(56, 189, 248, 0.22);
   border-radius: var(--radius-md);
   padding: 18px 20px;
   margin-bottom: 24px;
@@ -605,7 +609,7 @@ button {
 
 .kc-stat-box:hover {
   background-color: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 68, 51, 0.35);
+  border-color: rgba(56, 189, 248, 0.35);
   transform: translateY(-2px);
 }
 
@@ -656,7 +660,7 @@ button {
 }
 
 .kc-pillar-item.active {
-  border-color: rgba(255, 68, 51, 0.4);
+  border-color: rgba(56, 189, 248, 0.4);
 }
 
 .kc-pillar-top {
@@ -915,7 +919,7 @@ button {
 
 .kc-trajectory-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(255, 68, 51, 0.35);
+  border-color: rgba(56, 189, 248, 0.35);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
@@ -1518,17 +1522,17 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 260% 100%;
-  animation: spell-shimmer-sweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: spell-shimmer-sweep 7.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .spell-shimmer-vermilion {
   background-image: linear-gradient(
     90deg,
-    #FF4433 0%,
-    #FFA89E 32%,
+    #38BDF8 0%,
+    #BAE6FD 32%,
     #FFFFFF 50%,
-    #FFA89E 68%,
-    #FF4433 100%
+    #BAE6FD 68%,
+    #38BDF8 100%
   );
 }
 
@@ -1620,10 +1624,10 @@ button {
 }
 
 .spell-flow-element:hover {
-  background: rgba(255, 68, 51, 0.12);
-  border-color: rgba(255, 68, 51, 0.4);
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.4);
   color: #FFFFFF;
-  box-shadow: 0 0 16px rgba(255, 68, 51, 0.2);
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.2);
 }
 
 .spell-flow-sm {

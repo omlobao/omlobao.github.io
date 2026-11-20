@@ -117,7 +117,7 @@ export function GitLogo({ size = 18 }) {
 
 export function WebSocketLogo({ size = 18 }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FF4433" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="var(--vermilion)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M4 14l4 4 4-4" />
       <path d="M8 4v14" />
       <path d="M20 10l-4-4-4 4" />

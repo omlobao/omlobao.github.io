@@ -6,26 +6,26 @@ export default function UniverseBackground() {
   return (
     <div className="universe-background-wrapper" aria-hidden="true">
       <LightRays
-        intensity={12}
+        intensity={7}
         rays={24}
         reach={20}
         position={50}
-        animation={{ animate: true, speed: 4 }}
+        animation={{ animate: true, speed: 0.9 }}
         raysColor={{
-          color1: '#FF4433',
-          color2: '#7C3AED',
+          color1: '#38BDF8',
+          color2: '#6366F1',
         }}
       />
       <Galaxy
-        starColors={['#FF4433', '#FFA89E', '#FFFFFF', '#A78BFA']}
-        starSpeed={0.35}
-        density={1.1}
-        twinkleIntensity={0.25}
-        glowIntensity={0.35}
-        speed={0.8}
+        starColors={['#38BDF8', '#818CF8', '#BAE6FD', '#FFFFFF']}
+        starSpeed={0.05}
+        density={0.9}
+        twinkleIntensity={0.12}
+        glowIntensity={0.25}
+        speed={0.18}
         mouseInteraction={true}
         mouseRepulsion={true}
-        repulsionStrength={2.2}
+        repulsionStrength={1.5}
         clickWarp={true}
         transparent={true}
         opacity={0.85}

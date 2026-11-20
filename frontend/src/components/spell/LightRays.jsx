@@ -113,8 +113,8 @@ export default function LightRays({
   backgroundColor = "transparent",
   animation = { animate: true, speed: 5 },
   raysColor = {
-    color1: "#FF4433", // Vermilion cosmic pulse
-    color2: "#8B5CF6", // Nebula violet ray
+    color1: "#38BDF8", // Luminous celestial cyan
+    color2: "#818CF8", // Nebula indigo violet
   },
   style = {},
   className = "",
@@ -131,8 +131,8 @@ export default function LightRays({
   }, []);
 
   const [color1RGB, color2RGB] = useMemo(() => {
-    const c1 = raysColor.color1 || "#FF4433";
-    const c2 = raysColor.color2 || "#8B5CF6";
+    const c1 = raysColor.color1 || "#38BDF8";
+    const c2 = raysColor.color2 || "#818CF8";
     return [colorToRGB(c1), colorToRGB(c2)];
   }, [raysColor]);
 

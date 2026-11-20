@@ -58,8 +58,8 @@ export default function HeaderProfile() {
         <DecryptedText
           text={personalData.shortName}
           animateOn="view"
-          speed={45}
-          maxIterations={12}
+          speed={85}
+          maxIterations={6}
           sequential={true}
           characters="01!<>-_/[]{}—=+*^?#_$%&~"
           className="profile-decrypted-text"

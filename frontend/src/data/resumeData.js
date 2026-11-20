@@ -2,7 +2,7 @@ export const personalData = {
   name: 'Matheus de Oliveira Lobão Vieira',
   shortName: 'Matheus Lobão',
   handle: 'omlobao',
-  role: 'Desenvolvedor Full Stack & Back-End Python • Pós-graduando em Engenharia de Software Full Stack',
+  role: 'Analista de Sistemas • Desenvolvedor Full Stack e Back-End Python • Pós-graduando em Engenharia de Software Full Stack.',
   subRole: 'Django REST • FastAPI • React / React Native • PostgreSQL / MySQL',
   location: 'Taguatinga — Distrito Federal, Brasil',
   email: 'omlobao@gmail.com',

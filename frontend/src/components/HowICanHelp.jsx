@@ -27,7 +27,7 @@ export default function HowICanHelp() {
           <SpotlightCard
             key={idx}
             className="kc-service-card"
-            spotlightColor="rgba(255, 68, 51, 0.25)"
+            spotlightColor="rgba(56, 189, 248, 0.22)"
             borderGlow={0.65}
             intensity={0.16}
             spotlightSize={260}

@@ -11,7 +11,7 @@ export const translations = {
       top: 'Topo'
     },
     profile: {
-      role: 'Analista de Sistemas • Desenvolvedor Full Stack e Back-End Python • Pós-graduando em Engenharia de Software Full Stack',
+      role: 'Analista de Sistemas • Desenvolvedor Full Stack e Back-End Python • Pós-graduando em Engenharia de Software Full Stack.',
       locationLabel: 'Onde vivo',
       locationVal: 'Taguatinga-DF, Brasil',
       timeLabel: 'Hora Local',
@@ -372,7 +372,7 @@ export const translations = {
       top: 'Top'
     },
     profile: {
-      role: 'Systems Analyst • Full Stack and Back-End Python Developer • Postgraduate Student in Full Stack Software Engineering',
+      role: 'Systems Analyst • Full Stack and Back-End Python Developer • Postgraduate Student in Full Stack Software Engineering.',
       locationLabel: 'Location',
       locationVal: 'Taguatinga-DF, Brazil',
       timeLabel: 'Local Time',
