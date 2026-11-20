@@ -79,6 +79,17 @@ export const flagshipProject = {
 
 export const githubProjects = [
   {
+    id: 'barber-pro',
+    title: 'BarberPro — Gestão & Agendamento Inteligente',
+    description: 'Backend robusto em Django projetado para barbearias: motor de cálculo de horários livres, agendamento atômico anti-concorrência, comandas (PDV), comissões de barbeiros e fluxo de caixa.',
+    category: 'Backend e Gestão Comercial',
+    language: 'Python',
+    techStack: ['Python', 'Django', 'Django REST Framework', 'Holidays API', 'PEP 8'],
+    githubUrl: 'https://github.com/omlobao/barber-pro',
+    stars: 0,
+    featured: true
+  },
+  {
     id: 'pdvassistencia',
     title: 'PDV e Gestão de Assistência Técnica',
     description: 'Sistema backend robusto para controle de ordens de serviço, clientes, estoque de peças de reposição e orçamentos técnicos com regras de validação completas.',

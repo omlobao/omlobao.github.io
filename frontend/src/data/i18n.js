@@ -152,6 +152,13 @@ export const translations = {
       allGithub: 'Ver todos no GitHub',
       projects: [
         {
+          title: 'BarberPro — Gestão & Agendamento',
+          desc: 'Backend em Django com motor de horários disponíveis, agendamento atômico anti-concorrência, comandas (PDV) e fluxo de caixa.',
+          language: 'Python',
+          tech: 'Django • DRF • Regras de Negócio',
+          url: 'https://github.com/omlobao/barber-pro'
+        },
+        {
           title: 'Flix API RESTful',
           desc: 'API completa em Django REST Framework para gerenciamento e catálogo de mídias, atores e avaliações com JWT.',
           language: 'Python',
@@ -505,6 +512,13 @@ export const translations = {
       sectionTitle: 'Study Projects',
       allGithub: 'View all on GitHub',
       projects: [
+        {
+          title: 'BarberPro — Booking & Business Engine',
+          desc: 'Django backend featuring dynamic slot availability calculation, concurrency-safe atomic bookings, POS order management, and cash flow tracking.',
+          language: 'Python',
+          tech: 'Django • DRF • Business Logic',
+          url: 'https://github.com/omlobao/barber-pro'
+        },
         {
           title: 'Flix RESTful API',
           desc: 'Production-ready REST API built with Django REST Framework for media cataloging, actor relations, pagination, and JWT authentication.',
