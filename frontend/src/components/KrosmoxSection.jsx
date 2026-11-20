@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { TiltCard, FlowButton } from './spell';
 import {
   Globe,
   ArrowUpRight,
@@ -35,7 +34,7 @@ export default function KrosmoxSection() {
       </div>
 
       {/* Card 1: Portal Oficial Krosmox Studio */}
-      <TiltCard className="kc-flagship-card" style={{ marginBottom: 20 }} tiltLimit={6}>
+      <div className="kc-flagship-card" style={{ marginBottom: 20 }}>
         <div className="kc-flagship-badge-row">
           <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
             <span className="kc-tag kc-tag-vermilion">{t.krosmox.siteBadge}</span>
@@ -59,20 +58,22 @@ export default function KrosmoxSection() {
         </p>
 
         <div style={{ marginTop: 16 }}>
-          <FlowButton
+          <a
             href={t.krosmox.siteUrl}
             target="_blank"
             rel="noopener noreferrer"
-            size="default"
-            icon={Globe}
+            className="btn-pill-primary"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 20px', fontSize: '0.85rem' }}
           >
-            {t.krosmox.visitSiteBtn}
-          </FlowButton>
+            <Globe size={15} />
+            <span>{t.krosmox.visitSiteBtn}</span>
+            <ArrowUpRight size={15} />
+          </a>
         </div>
-      </TiltCard>
+      </div>
 
       {/* Card 2: KrosERP (Sistema Web SaaS) */}
-      <TiltCard className="kc-flagship-card" tiltLimit={6}>
+      <div className="kc-flagship-card">
         <div className="kc-flagship-badge-row">
           <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
             <span className="kc-tag kc-tag-vermilion">{t.krosmox.erpBadge}</span>
@@ -145,7 +146,7 @@ export default function KrosmoxSection() {
             ))}
           </div>
         </div>
-      </TiltCard>
+      </div>
     </section>
   );
 }

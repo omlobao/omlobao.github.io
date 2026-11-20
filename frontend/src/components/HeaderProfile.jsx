@@ -3,7 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { personalData } from '../data/resumeData';
 import { Check, Download, ArrowUpRight, Copy, Globe } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
-import { ShimmerText, FlowButton } from './spell';
+import { ShimmerText } from './spell';
 
 export default function HeaderProfile() {
   const { t, lang } = useLanguage();
@@ -99,14 +99,14 @@ export default function HeaderProfile() {
           {copied ? t.profile.emailCopied : t.profile.copyEmail}
         </button>
 
-        <FlowButton
+        <a
           href={t.profile.cvUrl}
           download={t.profile.cvFileName}
-          size="sm"
-          icon={Download}
+          className="social-pill"
         >
+          <Download size={13} />
           {t.profile.downloadCv}
-        </FlowButton>
+        </a>
       </div>
 
       {/* Meta Grid (Base, Hora Local, Foco) */}

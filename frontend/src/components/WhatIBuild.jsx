@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { flagshipProject } from '../data/projectsData';
-import { TiltCard, FlowButton } from './spell';
 import {
   ChevronDown,
   ChevronUp,
@@ -49,7 +48,7 @@ export default function WhatIBuild() {
       </div>
 
       {/* Flagship Card */}
-      <TiltCard className="kc-flagship-card" tiltLimit={6}>
+      <div className="kc-flagship-card">
         {/* Top Badges */}
         <div className="kc-flagship-badge-row">
           <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
@@ -77,15 +76,17 @@ export default function WhatIBuild() {
         {/* Live Demo Box & Credentials */}
         <div className="kc-demo-box">
           <div className="kc-demo-top-row">
-            <FlowButton
+            <a
               href={t.flagship.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              size="sm"
-              icon={Globe}
+              className="btn-pill-primary"
+              style={{ padding: '8px 18px', fontSize: '0.8rem' }}
             >
+              <Globe size={14} />
               {t.flagship.testDemoBtn}
-            </FlowButton>
+              <ArrowUpRight size={14} />
+            </a>
 
             {/* Quick-copy Credentials */}
             <div className="kc-credentials-group">
@@ -199,7 +200,7 @@ export default function WhatIBuild() {
             </a>
           </div>
         </div>
-      </TiltCard>
+      </div>
 
       {copiedItem && (
         <div className="kc-copy-toast">

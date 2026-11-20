@@ -2,7 +2,6 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { personalData } from '../data/resumeData';
 import { ArrowUpRight } from 'lucide-react';
-import { TiltCard } from './spell';
 
 export default function HowICanHelp() {
   const { t, lang } = useLanguage();
@@ -24,7 +23,7 @@ export default function HowICanHelp() {
 
       <div className="kc-services-grid">
         {t.services.list.map((srv, idx) => (
-          <TiltCard key={idx} className="kc-service-card" tiltLimit={8}>
+          <div key={idx} className="kc-service-card">
             <div>
               <div className="kc-service-num">{srv.number}</div>
               <h3 className="kc-service-title">{srv.title}</h3>
@@ -43,7 +42,7 @@ export default function HowICanHelp() {
                 ))}
               </ul>
             </div>
-          </TiltCard>
+          </div>
         ))}
       </div>
     </section>

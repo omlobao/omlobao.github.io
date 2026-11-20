@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { personalData } from '../data/resumeData';
 import { MessageSquare, Mail, Download, ArrowUp, ArrowUpRight } from 'lucide-react';
-import { ShimmerText, FlowButton } from './spell';
+import { ShimmerText } from './spell';
 
 export default function FooterSection() {
   const { t } = useLanguage();
@@ -23,16 +23,17 @@ export default function FooterSection() {
       </div>
 
       <div className="kc-footer-actions">
-        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center' }}>
-          <FlowButton
+        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+          <a
             href={personalData.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            size="default"
-            icon={MessageSquare}
+            className="btn-pill-primary"
           >
+            <MessageSquare size={15} />
             {t.footer.whatsappBtn}
-          </FlowButton>
+            <ArrowUpRight size={14} />
+          </a>
 
           <a
             href={`mailto:${personalData.email}`}
