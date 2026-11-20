@@ -7,23 +7,33 @@ import { Magnet } from './reactbits';
 export default function FloatingDock() {
   const { lang, toggleLang, t } = useLanguage();
 
+  const navLinks = [
+    { href: '#inicio', label: t.nav.home },
+    { href: '#construo', label: t.nav.projects },
+    { href: '#krosmox', label: t.nav.krosmox },
+    { href: '#certificacoes', label: t.nav.credentials },
+    { href: '#experiencia', label: t.nav.trajectory },
+    { href: '#servicos', label: t.nav.services },
+  ];
+
   return (
     <div className="floating-dock-wrapper">
       <nav className="floating-dock">
         {/* Scrollable Navigation Links */}
         <div className="dock-nav-links">
-          <a href="#inicio" className="dock-link">{t.nav.home}</a>
-          <a href="#construo" className="dock-link">{t.nav.projects}</a>
-          <a href="#krosmox" className="dock-link">{t.nav.krosmox}</a>
-          <a href="#certificacoes" className="dock-link">{t.nav.credentials}</a>
-          <a href="#experiencia" className="dock-link">{t.nav.trajectory}</a>
-          <a href="#servicos" className="dock-link">{t.nav.services}</a>
+          {navLinks.map((item, idx) => (
+            <Magnet key={idx} padding={20} style={{ flexShrink: 0 }}>
+              <a href={item.href} className="dock-link">
+                {item.label}
+              </a>
+            </Magnet>
+          ))}
         </div>
 
         {/* Pinned Action Group (Language Toggle & CTA) - Always Visible */}
         <div className="dock-actions">
           {/* Language Toggle Pill */}
-          <Magnet padding={20}>
+          <Magnet padding={20} style={{ flexShrink: 0 }}>
             <button
               onClick={toggleLang}
               className="dock-lang-btn"
@@ -37,7 +47,7 @@ export default function FloatingDock() {
             </button>
           </Magnet>
 
-          <Magnet padding={20}>
+          <Magnet padding={20} style={{ flexShrink: 0 }}>
             <a
               href={personalData.whatsappUrl}
               target="_blank"

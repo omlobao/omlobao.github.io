@@ -162,6 +162,10 @@ button {
   gap: 4px;
 }
 
+.dock-nav-links > * {
+  flex-shrink: 0;
+}
+
 .dock-actions {
   display: flex;
   align-items: center;
@@ -176,12 +180,15 @@ button {
   color: var(--text-secondary);
   padding: 6px 14px;
   border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
   transition: all var(--transition-fast);
 }
 
 .dock-link:hover {
   color: var(--text-primary);
   background-color: var(--bg-pill);
+  transform: translateY(-1px);
 }
 
 .dock-cta {
