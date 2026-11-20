@@ -1,3 +1,4 @@
+export { default as Galaxy } from './Galaxy';
 export { default as DecryptedText } from './DecryptedText';
 export { default as SpotlightCard } from './SpotlightCard';
 export { default as ClickSpark } from './ClickSpark';

@@ -1443,6 +1443,26 @@ button {
   box-shadow: none;
 }
 
+/* React Bits Galaxy & Universe Background Integration */
+.universe-background-wrapper {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.reactbits-galaxy-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* ==========================================================================
    SPELL UI INTEGRATION (spell.sh)
    Components: LightRays, TiltCard, ShimmerText, FlowButton
